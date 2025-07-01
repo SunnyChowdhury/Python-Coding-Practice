@@ -1,4 +1,4 @@
-# EASY LEVEL 
+# EASY 
 # Variables and Data Types
 
 #1. Swap two numbers - Using Tuple
@@ -47,3 +47,21 @@ num1 = num1 - num2
 print('After swapping')
 print('First number: ', num1)
 print('Second number: ', num2)
+
+#2. Check if a number is prime number
+
+num = int(input("Enter a number: "))
+
+count = 0
+
+if num > 1:
+    for i in range(1, num+1):
+        if (num%i == 0):
+            count = count + 1
+else:
+    print(f'{num} is not a prime number')
+
+if (count == 2):
+    print(f'{num} is a prime number')
+else:
+    print(f'{num} is not a prime number')
