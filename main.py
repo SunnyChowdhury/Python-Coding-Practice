@@ -65,3 +65,20 @@ else:
         print(f'{num} is a prime number')
     else:
         print(f'{num} is not a prime number')
+
+#2a. Check if a number is prime number - using math.sqrt() function
+
+import math
+num = int(input("Enter a number: "))
+
+count = 0
+
+if num <= 1:
+    print(f'{num} is not a prime number')
+else:
+    for i in range(2, int(math.sqrt(num)) + 1):
+        if num%i == 0:
+            print(f'{num} is not a prime number')
+            break
+    else:
+        print(f'{num} is a prime number')
