@@ -80,5 +80,6 @@ else:
         if num%i == 0:
             print(f'{num} is not a prime number')
             break
+    # else after for runs only if the loop completes without break
     else:
         print(f'{num} is a prime number')
