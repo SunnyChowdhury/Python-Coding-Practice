@@ -1,4 +1,36 @@
-# EASY 
+'''
+
+EASY Topics:
+1. Swap two numbers (with/without temp)
+2. Check if a number is prime
+3. Find factorial (non-recursive)
+4. Fibonacci series (basic recursion)
+5. Print sum of elements in a list
+6. Find max/min elements in a list
+7. Find index of max/min elements
+8. Find length of a list
+9. Count specific word occurrences
+10. Swap first/last or any two elements in a list
+11. Remove duplicates from string (set-based)
+12. Search an element in a list
+13. Clear a list
+14. Reverse a list
+15. Clone/copy a list (5 approaches)
+16. Count occurrences of an element
+17. Multiply elements of a list
+18. 2nd largest/smallest element
+19. Check palindrome (word/string)
+20. Reverse words in a string
+21. Substring search (and frequency)
+22. String length
+23. Sum of all odd/even numbers
+24. First/all repeating character in a string
+25. FizzBuzz
+26. Reverse a number
+27. Add first and last elements of two lists
+
+'''
+
 # Variables and Data Types
 
 #1. Swap two numbers - Using Tuple
