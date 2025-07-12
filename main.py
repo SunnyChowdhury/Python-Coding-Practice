@@ -1,6 +1,6 @@
 '''
-
 EASY Topics:
+-----------
 1. Swap two numbers (with/without temp)
 2. Check if a number is prime
 3. Find factorial (non-recursive)
@@ -29,6 +29,42 @@ EASY Topics:
 26. Reverse a number
 27. Add first and last elements of two lists
 
+Medium Topics:
+-------------
+28. Factorial using recursion
+29. Fibonacci sequence with recursion and validation
+30. Remove duplicate words and return a string
+31. Check for special characters using regex
+32. Check for URLs in strings using regex
+33. Leetcode: Contains Duplicate (Set)
+34. Leetcode: Valid Anagram (Counter, sort, hashmap approaches)
+35. Leetcode: Two Sum (HashMap)
+36. Leetcode: Valid Parentheses (Stack)
+37. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
+
+Advanced Topics:
+---------------
+38. LRU Cache Implementation
+    collections.OrderedDict or Custom LinkedList + HashMap approach.
+39. Multithreading in Python (threading module)
+    Write a program that starts multiple threads to compute parts of a task.
+
+40. Producer-Consumer Problem using Queues
+41. Decorator Functions
+    Implement a timing/decorator to log function performance.
+42. Using functools.reduce() and map() on a real problem
+43. Recursive Backtracking
+    E.g. generating permutations, solving N-Queens.
+
+44. Custom Exception Handling
+    Define custom errors for test validations.
+
+45. Use unittest or pytest
+    Write end-to-end test for a Python module with mocking.
+46. Parsing JSON / XML / API response
+    Useful for SDET testing pipelines.
+47. Writing Parameterized Tests with Pytest
+48. Database interaction using sqlite3
 '''
 
 # Variables and Data Types
