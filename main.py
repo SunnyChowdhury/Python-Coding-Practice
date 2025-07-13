@@ -67,8 +67,8 @@ Advanced Topics:
 48. Database interaction using sqlite3
 '''
 
+# Easy
 # Variables and Data Types
-
 #1. Swap two numbers - Using Tuple
 
 num1 = input('Enter the first number: ')
@@ -151,3 +151,23 @@ else:
     # else after for runs only if the loop completes without break
     else:
         print(f'{num} is a prime number')
+
+
+
+# Medium
+# Loop & Recursion
+#1. Factorial using recursion
+
+num = int(input("Enter a number: "))
+
+def factorial(num):
+    if num < 0:
+        return f"no factorial for {num}"
+    elif num == 0 or num == 1:
+        return 1
+    else:
+        return num * factorial(num-1)
+    
+
+print(factorial(num))
+
