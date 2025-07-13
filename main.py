@@ -65,7 +65,6 @@ Advanced Topics:
     Useful for SDET testing pipelines.
 47. Writing Parameterized Tests with Pytest
 48. Database interaction using sqlite3
-test test
 '''
 
 # Variables and Data Types
