@@ -169,7 +169,6 @@ def fibonacci(num):
         return 1
     else:
         return fibonacci(num-1) + fibonacci(num-2)
-    
 
 while True:
     numberOfTerms = int(input("Enter the number of terms: "))
@@ -189,7 +188,6 @@ for i in arr:
 
 print(sum)
 
-
 #5a. Print sum of elements in a list - Using for loop and range function
 arr = [10, 20, 30, 40, 50]
 total = 0
@@ -200,10 +198,6 @@ for i in range(len(arr)):
 print(sum)
 
 #5b. Print sum of elements in a list - Using built in sum() method
-arr = [10, 20, 30, 40, 50]
-print(sum(arr))
-
-#5c. Print sum of elements in a list - Using sum method
 arr = [10, 20, 30, 40, 50]
 print(sum(arr))
 
