@@ -180,6 +180,25 @@ while True:
     else:
         print("Enter a positive number")
 
+#5. Print sum of elements in a list - Using for loop and without range function
+arr = [10, 20, 30, 40, 50]
+sum = 0
+
+for i in arr:
+    sum = sum + i
+
+print(sum)
+
+
+#5a. Print sum of elements in a list - Using for loop and range function
+arr = [10, 20, 30, 40, 50]
+sum = 0
+
+for i in range(len(arr)):
+    sum = sum + arr[i]
+
+print(sum)
+
 
 # Medium
 # Loop & Recursion
