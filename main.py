@@ -5,7 +5,7 @@ EASY Topics:
 2. Check if a number is prime ✅
 3. Find factorial (non-recursive) ✅
 4. Fibonacci series (basic recursion) ✅
-5. Print sum of elements in a list
+5. Print sum of elements in a list ✅
 6. Find max/min elements in a list
 7. Find index of max/min elements
 8. Find length of a list
@@ -182,23 +182,30 @@ while True:
 
 #5. Print sum of elements in a list - Using for loop and without range function
 arr = [10, 20, 30, 40, 50]
-sum = 0
+total = 0
 
 for i in arr:
-    sum = sum + i
+    total = total + i
 
 print(sum)
 
 
 #5a. Print sum of elements in a list - Using for loop and range function
 arr = [10, 20, 30, 40, 50]
-sum = 0
+total = 0
 
 for i in range(len(arr)):
-    sum = sum + arr[i]
+    total = total + arr[i]
 
 print(sum)
 
+#5b. Print sum of elements in a list - Using built in sum() method
+arr = [10, 20, 30, 40, 50]
+print(sum(arr))
+
+#5c. Print sum of elements in a list - Using sum method
+arr = [10, 20, 30, 40, 50]
+print(sum(arr))
 
 # Medium
 # Loop & Recursion
