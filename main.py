@@ -70,7 +70,6 @@ Advanced Topics:
 # Easy
 # Variables and Data Types
 #1. Swap two numbers - Using Tuple
-
 num1 = input('Enter the first number: ')
 num2 = input('Enter the second number: ')
 
@@ -85,7 +84,6 @@ print('Second number: ', num2)
 
 
 #1a. Swap two numbers - Using a third variable
-
 num1 = input('Enter the first number: ')
 num2 = input('Enter the second number: ')
 
@@ -101,7 +99,6 @@ print('First number: ', num1)
 print('Second number: ', num2)
 
 #1b. Swap two numbers - Without using a third variable
-
 num1 = int(input('Enter the first number: '))
 num2 = int(input('Enter the second number: '))
 
@@ -117,7 +114,6 @@ print('First number: ', num1)
 print('Second number: ', num2)
 
 #2. Check if a number is prime number
-
 num = int(input("Enter a number: "))
 
 count = 0
@@ -135,7 +131,6 @@ else:
         print(f'{num} is not a prime number')
 
 #2a. Check if a number is prime number - using math.sqrt() function
-
 import math
 num = int(input("Enter a number: "))
 
@@ -152,12 +147,26 @@ else:
     else:
         print(f'{num} is a prime number')
 
+#3. Find factorial (non-recursion)
+num = int(input("Enter a number: "))
+
+def factorial(num):
+    factorial = 1
+    if num < 0:
+        return (f'There is not factorial for {num}')
+    elif num == 0 or num == 1:
+        return 1
+    else:
+        for i in range(1, num+1):
+            factorial = factorial * i
+        return factorial
+
+print(factorial(num))
 
 
 # Medium
 # Loop & Recursion
 #1. Factorial using recursion
-
 num = int(input("Enter a number: "))
 
 def factorial(num):
