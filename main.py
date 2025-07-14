@@ -161,7 +161,6 @@ def factorial(num):
 print(factorial(num))
 
 #4. Fibonacci series (basic recursion) - Print Fibonacci Sequence: 0 1 1 2 3 5
-
 def fibonacci(num):
     if num < 0 or num == 0:
         return 0
