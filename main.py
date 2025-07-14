@@ -4,7 +4,7 @@ EASY Topics:
 1. Swap two numbers (with/without temp) ✅
 2. Check if a number is prime ✅
 3. Find factorial (non-recursive) ✅
-4. Fibonacci series (basic recursion)
+4. Fibonacci series (basic recursion) ✅
 5. Print sum of elements in a list
 6. Find max/min elements in a list
 7. Find index of max/min elements
@@ -159,6 +159,26 @@ def factorial(num):
         return factorial
 
 print(factorial(num))
+
+#4. Fibonacci series (basic recursion) - Print Fibonacci Sequence: 0 1 1 2 3 5
+
+def fibonacci(num):
+    if num < 0 or num == 0:
+        return 0
+    elif num == 1:
+        return 1
+    else:
+        return fibonacci(num-1) + fibonacci(num-2)
+    
+
+while True:
+    numberOfTerms = int(input("Enter the number of terms: "))
+    if numberOfTerms > 0:
+        for i in range(numberOfTerms):
+            print(fibonacci(i))
+        break
+    else:
+        print("Enter a positive number")
 
 
 # Medium
