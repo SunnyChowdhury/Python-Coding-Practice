@@ -6,7 +6,7 @@ EASY Topics:
 3. Find factorial (non-recursive) ✅
 4. Fibonacci series (basic recursion) ✅
 5. Print sum of elements in a list ✅
-6. Find max/min elements in a list
+6. Find max/min elements in a list ✅
 7. Find index of max/min elements
 8. Find length of a list
 9. Count specific word occurrences
@@ -64,8 +64,8 @@ Advanced Topics:
 48. Database interaction using sqlite3
 '''
 
-# Easy
-# Variables and Data Types
+#Basic programming: Easy
+#Topic: Variables and Data Types
 #1. Swap two numbers - Using Tuple
 num1 = input('Enter the first number: ')
 num2 = input('Enter the second number: ')
@@ -178,6 +178,8 @@ while True:
     else:
         print("Enter a positive number")
 
+# Topic: Lists/Arrarys# #6. Find Maximum & Minimum Element in an Array - Using for loop
+# arr = [10, 50, 200, 40, 3]
 #5. Print sum of elements in a list - Using for loop and without range function
 arr = [10, 20, 30, 40, 50]
 total = 0
@@ -200,8 +202,42 @@ print(sum)
 arr = [10, 20, 30, 40, 50]
 print(sum(arr))
 
-# Medium
-# Loop & Recursion
+#6. Find Maximum & Minimum Element in an Array - Using for loop
+arr = [10, 50, 200, 40, 3]
+max = arr[0]
+min = arr[0]
+
+for i in arr:
+    if i > max:
+        max = i
+    if i < min:
+        min = i
+
+print(f'The max value is {max}')
+print(f'The min value is {min}')
+
+#6a. Find Maximum & Minimum Element in an Array - Using for loop and range function
+arr = [10, 50, 200, 40, 3]
+max = arr[0]
+min = arr[0]
+
+for i in range(len(arr)):
+    if arr[i] > max:
+        max = arr[i]
+    if arr[i] < min:
+        min = arr[i]
+
+print(f'The max value is {max}')
+print(f'The min value is {min}')
+
+
+
+
+
+
+
+#Basic programming: Medium
+#Loop & Recursion
 #1. Factorial using recursion
 num = int(input("Enter a number: "))
 
