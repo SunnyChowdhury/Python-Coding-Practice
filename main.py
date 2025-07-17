@@ -230,7 +230,23 @@ for i in range(len(arr)):
 print(f'The max value is {max}')
 print(f'The min value is {min}')
 
+#7. Find The index of Maximum & Minimum Element in an Array - list[i] = element, i = array index
 
+list = [10, 20, 13, 2, 200, 19]
+
+max_index = 0
+min_index = 0
+
+# print(len(list))
+
+for i in range(len(list)):
+    if list[i] > list[max_index]:
+        max_index = i
+    if list[i] < list[min_index]:
+        min_index = i
+
+print(f'The index of the maximum number is: {max_index}')
+print('The index of the minimum number is:', min_index)
 
 
 
