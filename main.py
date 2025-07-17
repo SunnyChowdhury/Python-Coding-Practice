@@ -7,8 +7,8 @@ EASY Topics:
 4. Fibonacci series (basic recursion) ✅
 5. Print sum of elements in a list ✅
 6. Find max/min elements in a list ✅
-7. Find index of max/min elements
-8. Find length of a list
+7. Find index of max/min elements ✅
+8. Find length of a list ✅
 9. Count specific word occurrences
 10. Swap first/last or any two elements in a list
 11. Remove duplicates from string (set-based)
@@ -248,7 +248,23 @@ for i in range(len(list)):
 print(f'The index of the maximum number is: {max_index}')
 print('The index of the minimum number is:', min_index)
 
+#8. Find the length of a list/Array - Using built in len() method
+arr = [10, 300, 20, 400, 50, 70]
+print(len(arr))
 
+#8a. Find the length of a list/Array - Using for loop
+arr = [10, 300, 20, 400, 50, 70]
+count = 0
+
+for i in arr:
+    count += 1
+
+print('The total number of elements in the list is', count)
+
+#8b. Find the length of a list/Array - when list is created by user
+userList = input("Enter the numbers separated by space: ")
+total = userList.split()
+print(len(total))
 
 
 
