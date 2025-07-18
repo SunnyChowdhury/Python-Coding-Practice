@@ -9,8 +9,8 @@ EASY Topics:
 6. Find max/min elements in a list ✅
 7. Find index of max/min elements ✅
 8. Find length of a list ✅
-9. Count specific word occurrences
-10. Swap first/last or any two elements in a list
+9. Count specific word occurrences ✅
+10. Swap first/last or any two elements in a list ✅
 11. Remove duplicates from string (set-based)
 12. Search an element in a list
 13. Clear a list
@@ -262,6 +262,36 @@ userList = input("Enter the numbers separated by space: ")
 total = userList.split()
 print(len(total))
 
+#9. Count specific word occurrences
+str = "my name is sunny giving interview sunny knows python"
+count = 0
+count1 = 0
+
+list = str.split()
+
+# Iterate through every elemet
+for i in list:
+    if i == 'sunny':
+        count += 1
+
+#Iterate though indices
+for i in range(len(list)):
+    if list[i] == 'sunny':
+        count1 += 1
+
+print(count)
+print(count1)
+
+#10. Swap first/last or any two elements in a list
+arr = [12, 35, 9, 56, 24]
+
+print(arr[0])
+print(arr[-1])
+
+arr[0], arr[-1] = arr[-1], arr[0]
+
+print(arr[0])
+print(arr[-1])
 
 
 #Basic programming: Medium
@@ -276,7 +306,6 @@ def factorial(num):
         return 1
     else:
         return num * factorial(num-1)
-    
 
 print(factorial(num))
 
