@@ -178,7 +178,7 @@ while True:
     else:
         print("Enter a positive number")
 
-# Topic: Lists/Arrarys# 
+# Topic: Lists/Arrarys
 #5. Print sum of elements in a list - Using for loop
 arr = [10, 20, 30, 40, 50]
 total = 0
