@@ -236,8 +236,6 @@ list = [10, 20, 13, 2, 200, 19]
 max_index = 0
 min_index = 0
 
-# print(len(list))
-
 for i in range(len(list)):
     if list[i] > list[max_index]:
         max_index = i
