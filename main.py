@@ -178,9 +178,8 @@ while True:
     else:
         print("Enter a positive number")
 
-# Topic: Lists/Arrarys# #6. Find Maximum & Minimum Element in an Array - Using for loop
-# arr = [10, 50, 200, 40, 3]
-#5. Print sum of elements in a list - Using for loop and without range function
+# Topic: Lists/Arrarys# 
+#5. Print sum of elements in a list - Using for loop
 arr = [10, 20, 30, 40, 50]
 total = 0
 
@@ -216,7 +215,7 @@ for i in arr:
 print(f'The max value is {max}')
 print(f'The min value is {min}')
 
-#6a. Find Maximum & Minimum Element in an Array - Using for loop and range function
+#6a. Find Maximum & Minimum Element in an Array - Using for loop and range function , range function print indices, compare with index
 arr = [10, 50, 200, 40, 3]
 max = arr[0]
 min = arr[0]
