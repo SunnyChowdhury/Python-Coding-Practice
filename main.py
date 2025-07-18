@@ -295,7 +295,6 @@ print(arr[-1])
 
 #11.  Swap any two elements of a list:
 arr = [12, 35, 9, 56, 24]
-
 print(arr[1])
 print(arr[3])
 
