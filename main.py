@@ -293,6 +293,17 @@ arr[0], arr[-1] = arr[-1], arr[0]
 print(arr[0])
 print(arr[-1])
 
+#11.  Swap any two elements of a list:
+arr = [12, 35, 9, 56, 24]
+
+print(arr[1])
+print(arr[3])
+
+# swap position 2 with 4
+arr[1], arr[3] = arr[3], arr[1]
+print(arr[1])
+print(arr[3])
+
 
 #Basic programming: Medium
 #Loop & Recursion
