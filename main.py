@@ -1,6 +1,6 @@
 '''
-EASY Topics:
-------------
+Basic programming: Easy
+-----------------------
 1. Swap two numbers (with/without temp) ✅
 2. Check if a number is prime ✅
 3. Find factorial (non-recursive) ✅
@@ -11,7 +11,7 @@ EASY Topics:
 8. Find length of a list ✅
 9. Count specific word occurrences ✅
 10. Swap first/last or any two elements in a list ✅
-11. Remove duplicates from string (set-based)
+11. Remove duplicates from string (set-based) ✅
 12. Search an element in a list
 13. Clear a list
 14. Reverse a list
@@ -29,43 +29,48 @@ EASY Topics:
 26. Reverse a number
 27. Add first and last elements of two lists
 
-Medium Topics:
---------------
+Basic programming: Medium
+-------------------------
 28. Factorial using recursion ✅
 29. Fibonacci sequence with recursion and validation
 30. Remove duplicate words and return a string
 31. Check for special characters using regex
 32. Check for URLs in strings using regex
-33. Leetcode: Contains Duplicate (Set)
-34. Leetcode: Valid Anagram (Counter, sort, hashmap approaches)
-35. Leetcode: Two Sum (HashMap)
-36. Leetcode: Valid Parentheses (Stack)
-37. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
 
-Advanced Topics:
-----------------
-38. LRU Cache Implementation
+Basic programming: Advanced
+---------------------------
+33. LRU Cache Implementation
     collections.OrderedDict or Custom LinkedList + HashMap approach.
-39. Multithreading in Python (threading module)
+34. Multithreading in Python (threading module)
     Write a program that starts multiple threads to compute parts of a task.
-40. Producer-Consumer Problem using Queues
-41. Decorator Functions
+35. Producer-Consumer Problem using Queues
+36. Decorator Functions
     Implement a timing/decorator to log function performance.
-42. Using functools.reduce() and map() on a real problem
-43. Recursive Backtracking
+37. Using functools.reduce() and map() on a real problem
+38. Recursive Backtracking
     E.g. generating permutations, solving N-Queens.
-44. Custom Exception Handling
+39. Custom Exception Handling
     Define custom errors for test validations.
-45. Use unittest or pytest
+40. Use unittest or pytest
     Write end-to-end test for a Python module with mocking.
-46. Parsing JSON / XML / API response
+41. Parsing JSON / XML / API response
     Useful for SDET testing pipelines.
-47. Writing Parameterized Tests with Pytest
-48. Database interaction using sqlite3
+42. Writing Parameterized Tests with Pytest
+43. Database interaction using sqlite3
+
+Leetcode: Easy
+--------------
+44. Leetcode: Contains Duplicate (Set)
+45. Leetcode: Valid Anagram (Counter, sort, hashmap approaches)
+46. Leetcode: Two Sum (HashMap)
+47. Leetcode: Valid Parentheses (Stack)
+48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
 '''
 
 #Basic programming: Easy
+#------------------------
 #Topic: Variables and Data Types
+#-------------------------------
 #1. Swap two numbers - Using Tuple
 num1 = input('Enter the first number: ')
 num2 = input('Enter the second number: ')
@@ -179,6 +184,7 @@ while True:
         print("Enter a positive number")
 
 # Topic: Lists/Arrarys
+#---------------------
 #5. Print sum of elements in a list - Using for loop
 arr = [10, 20, 30, 40, 50]
 total = 0
@@ -269,7 +275,7 @@ count1 = 0
 
 list = str.split()
 
-# Iterate through every elemet
+# Iterate through every element
 for i in list:
     if i == 'sunny':
         count += 1
@@ -303,9 +309,25 @@ arr[1], arr[3] = arr[3], arr[1]
 print(arr[1])
 print(arr[3])
 
+#12. Remove the duplicate occurrence of words in a string and return a list:
+input_str = input("Enter words separated by spaces: ")
+
+uniqueWords = set(input_str.split())
+
+print(list(uniqueWords))
+
+#13. Remove the duplicate words from a string and return a string:
+input_str = input("Enter words separated by spaces: ")
+print(input_str)
+newStr = set(input_str.split())
+print(newStr)
+print(" ".join(newStr))
+
 
 #Basic programming: Medium
-#Loop & Recursion
+#-------------------------
+#Topic: Loop & Recursion
+#-----------------------
 #1. Factorial using recursion
 num = int(input("Enter a number: "))
 
