@@ -14,7 +14,7 @@ Basic programming: Easy
 11. Remove duplicates from string (set-based) ✅
 12. Search an element in a list ✅
 13. Clear a list ✅
-14. Reverse a list
+14. Reverse a list ✅
 15. Clone/copy a list (5 approaches)
 16. Count occurrences of an element
 17. Multiply elements of a list
@@ -367,15 +367,33 @@ if num in myList:
 else:
     print(f'Element not found')
 
-#15. Clear a list:
+#15. Clear a list
 myList = [1, 6, 3, 5, 3, 4]
 
 print('Before clearing the list', myList)
 
 myList.clear()
 
-
 print('After clearing the list', myList)
+
+#16. Reverse a list - Using slicing 
+
+myList = [1, 6, 3, 5, 3, 4]
+print('Before reversing', myList)
+reversedList = myList[::-1]
+print('After reversing', reversedList)
+
+#16a. Reverse a list - Using reverse() method
+
+myList = [1, 6, 3, 5, 3, 4]
+print('Before reversing', myList)
+myList.reverse()
+print('After reversing', myList)
+
+
+
+
+
 
 
 # Basic programming: Medium
