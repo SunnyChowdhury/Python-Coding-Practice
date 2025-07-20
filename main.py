@@ -13,7 +13,7 @@ Basic programming: Easy
 10. Swap first/last or any two elements in a list ✅
 11. Remove duplicates from string (set-based) ✅
 12. Search an element in a list ✅
-13. Clear a list
+13. Clear a list ✅
 14. Reverse a list
 15. Clone/copy a list (5 approaches)
 16. Count occurrences of an element
@@ -367,6 +367,15 @@ if num in myList:
 else:
     print(f'Element not found')
 
+#15. Clear a list:
+myList = [1, 6, 3, 5, 3, 4]
+
+print('Before clearing the list', myList)
+
+myList.clear()
+
+
+print('After clearing the list', myList)
 
 
 # Basic programming: Medium
