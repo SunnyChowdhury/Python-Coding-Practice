@@ -12,7 +12,7 @@ Basic programming: Easy
 9. Count specific word occurrences ✅
 10. Swap first/last or any two elements in a list ✅
 11. Remove duplicates from string (set-based) ✅
-12. Search an element in a list
+12. Search an element in a list ✅
 13. Clear a list
 14. Reverse a list
 15. Clone/copy a list (5 approaches)
@@ -342,6 +342,31 @@ print(input_str)
 newStr = set(input_str.split())
 print(newStr)
 print(" ".join(newStr))
+
+#14. Search an Element from a list - Using for loop
+
+myList = [12, 222, 34, 4, 5]
+
+num = int(input("What number do you want to find? "))
+
+for i in myList:
+    if num == i:
+        print('Element found')
+        break
+else:
+    print(f'Element not found')
+
+
+#14a. Search an Element from a list - Using 'in' operator
+myList = [12, 222, 34, 4, 5]
+
+num = int(input("What number do you want to find? "))
+
+if num in myList:
+    print(f'Element found')
+else:
+    print(f'Element not found')
+
 
 
 # Basic programming: Medium
