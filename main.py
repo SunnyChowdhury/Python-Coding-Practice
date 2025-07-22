@@ -414,3 +414,23 @@ def factorial(num):
 
 print(factorial(num))
 
+
+
+
+
+
+# Leetcode: Easy
+# --------------
+#44. Leetcode: Contains Duplicate - Use set()
+
+nums = [1,2,3,4]
+
+def containDuplicate(nums):
+    hashset = set()
+    for i in nums:
+        if i in hashset:
+            return True
+        hashset.add(i)
+    return False
+
+print(containDuplicate(nums))
