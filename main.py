@@ -60,7 +60,7 @@ Basic programming: Advanced
 
 Leetcode: Easy
 --------------
-44. Leetcode: Contains Duplicate (Set)
+44. Leetcode: Contains Duplicate (Set) ✅
 45. Leetcode: Valid Anagram (Counter, sort, hashmap approaches)
 46. Leetcode: Two Sum (HashMap)
 47. Leetcode: Valid Parentheses (Stack)
