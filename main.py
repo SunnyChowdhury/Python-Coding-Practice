@@ -421,9 +421,11 @@ print(factorial(num))
 
 # Leetcode: Easy
 # --------------
-#44. Leetcode: Contains Duplicate - Use set()
+# Topic: Arrays & Hashing
+# -----------------------
+#44. Contains Duplicate (Leetcode: 217) - Use set()
 
-nums = [1,2,3,4]
+nums = [1,2,3,1]
 
 def containDuplicate(nums):
     hashset = set()
@@ -434,3 +436,29 @@ def containDuplicate(nums):
     return False
 
 print(containDuplicate(nums))
+
+
+
+# Leetcode: Medium
+# ----------------
+# Topic: Arrays & Hashing
+# -----------------------
+#45. Group Anagrams (Leetcode: 242) - Use dict, ord()
+
+from collections import defaultdict
+
+strs = ["eat","tea","tan","ate","nat","bat"]
+res = defaultdict(list)
+
+def validAnagram(strs):
+    for s in strs:
+        count = [0] * 26
+
+        for c in s:
+            count[ord(c) - ord("a")] +=1  # Map 'a' - 'z' to idex 0 - 25
+
+        res[tuple(count)].append(s)
+
+    return list(res.values())
+
+print(validAnagram(strs))
