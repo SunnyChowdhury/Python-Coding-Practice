@@ -60,11 +60,15 @@ Basic programming: Advanced
 
 Leetcode: Easy
 --------------
-44. Leetcode: Contains Duplicate (Set) ✅
+44. 217: Contains Duplicate (Set) ✅
 45. Leetcode: Valid Anagram (Counter, sort, hashmap approaches)
 46. Leetcode: Two Sum (HashMap)
 47. Leetcode: Valid Parentheses (Stack)
 48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
+
+Leetcode: Medium
+----------------
+49. 242: Group Anagram ✅
 '''
 
 # Basic programming: Easy
