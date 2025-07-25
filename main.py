@@ -77,7 +77,6 @@ Leetcode: Medium
 # Topic: Variables and Data Types
 # -------------------------------
 #1. Swap two numbers - Using Tuple
-
 num1 = input('Enter the first number: ')
 num2 = input('Enter the second number: ')
 
@@ -92,7 +91,6 @@ print('Second number: ', num2)
 
 
 #1a. Swap two numbers - Using a third variable
-
 num1 = input('Enter the first number: ')
 num2 = input('Enter the second number: ')
 
@@ -108,7 +106,6 @@ print('First number: ', num1)
 print('Second number: ', num2)
 
 #1b. Swap two numbers - Without using a third variable
-
 num1 = int(input('Enter the first number: '))
 num2 = int(input('Enter the second number: '))
 
@@ -124,7 +121,6 @@ print('First number: ', num1)
 print('Second number: ', num2)
 
 #2. Check if a number is prime number
-
 num = int(input("Enter a number: "))
 count = 0
 
@@ -141,7 +137,6 @@ else:
         print(f'{num} is not a prime number')
 
 #2a. Check if a number is prime number - using math.sqrt() function
-
 import math
 num = int(input("Enter a number: "))
 
@@ -159,7 +154,6 @@ else:
         print(f'{num} is a prime number')
 
 #3. Find factorial (non-recursion)
-
 num = int(input("Enter a number: "))
 
 def factorial(num):
@@ -176,7 +170,6 @@ def factorial(num):
 print(factorial(num))
 
 #4. Fibonacci series (basic recursion) - Print Fibonacci Sequence: 0 1 1 2 3 5
-
 def fibonacci(num):
     if num < 0 or num == 0:
         return 0
@@ -197,7 +190,6 @@ while True:
 # Topic: Lists/Arrarys
 # ---------------------
 #5. Print sum of elements in a list - Using for loop
-
 arr = [10, 20, 30, 40, 50]
 total = 0
 
@@ -207,7 +199,6 @@ for i in arr:
 print(sum)
 
 #5a. Print sum of elements in a list - Using for loop and range function
-
 arr = [10, 20, 30, 40, 50]
 total = 0
 
@@ -217,12 +208,10 @@ for i in range(len(arr)):
 print(sum)
 
 #5b. Print sum of elements in a list - Using built in sum() method
-
 arr = [10, 20, 30, 40, 50]
 print(sum(arr))
 
 #6. Find Maximum & Minimum Element in an Array - Using for loop
-
 arr = [10, 50, 200, 40, 3]
 max = arr[0]
 min = arr[0]
@@ -237,7 +226,6 @@ print(f'The max value is {max}')
 print(f'The min value is {min}')
 
 #6a. Find Maximum & Minimum Element in an Array - Using for loop and range function , range function print indices, compare with index
-
 arr = [10, 50, 200, 40, 3]
 max = arr[0]
 min = arr[0]
@@ -252,7 +240,6 @@ print(f'The max value is {max}')
 print(f'The min value is {min}')
 
 #7. Find The index of Maximum & Minimum Element in an Array - list[i] = element, i = array index
-
 list = [10, 20, 13, 2, 200, 19]
 
 max_index = 0
@@ -268,12 +255,10 @@ print(f'The index of the maximum number is: {max_index}')
 print('The index of the minimum number is:', min_index)
 
 #8. Find the length of a list/Array - Using built in len() method
-
 arr = [10, 300, 20, 400, 50, 70]
 print(len(arr))
 
 #8a. Find the length of a list/Array - Using for loop
-
 arr = [10, 300, 20, 400, 50, 70]
 count = 0
 
@@ -283,13 +268,11 @@ for i in arr:
 print('The total number of elements in the list is', count)
 
 #8b. Find the length of a list/Array - when list is created by user
-
 userList = input("Enter the numbers separated by space: ")
 total = userList.split()
 print(len(total))
 
 #9. Count specific word occurrences
-
 str = "my name is sunny giving interview sunny knows python"
 count = 0
 count1 = 0
@@ -310,19 +293,15 @@ print(count)
 print(count1)
 
 #10. Swap first/last or any two elements in a list
-
 arr = [12, 35, 9, 56, 24]
-
 print(arr[0])
 print(arr[-1])
 
 arr[0], arr[-1] = arr[-1], arr[0]
-
 print(arr[0])
 print(arr[-1])
 
 #11.  Swap any two elements of a list:
-
 arr = [12, 35, 9, 56, 24]
 print(arr[1])
 print(arr[3])
@@ -333,15 +312,11 @@ print(arr[1])
 print(arr[3])
 
 #12. Remove the duplicate occurrence of words in a string and return a list:
-
 input_str = input("Enter words separated by spaces: ")
-
 uniqueWords = set(input_str.split())
-
 print(list(uniqueWords))
 
 #13. Remove the duplicate words from a string and return a string:
-
 input_str = input("Enter words separated by spaces: ")
 print(input_str)
 newStr = set(input_str.split())
@@ -349,9 +324,7 @@ print(newStr)
 print(" ".join(newStr))
 
 #14. Search an Element from a list - Using for loop
-
 myList = [12, 222, 34, 4, 5]
-
 num = int(input("What number do you want to find? "))
 
 for i in myList:
@@ -360,7 +333,6 @@ for i in myList:
         break
 else:
     print(f'Element not found')
-
 
 #14a. Search an Element from a list - Using 'in' operator
 myList = [12, 222, 34, 4, 5]
@@ -374,22 +346,17 @@ else:
 
 #15. Clear a list
 myList = [1, 6, 3, 5, 3, 4]
-
 print('Before clearing the list', myList)
-
 myList.clear()
-
 print('After clearing the list', myList)
 
 #16. Reverse a list - Using slicing 
-
 myList = [1, 6, 3, 5, 3, 4]
 print('Before reversing', myList)
 reversedList = myList[::-1]
 print('After reversing', reversedList)
 
 #16a. Reverse a list - Using reverse() method
-
 myList = [1, 6, 3, 5, 3, 4]
 print('Before reversing', myList)
 myList.reverse()
@@ -406,7 +373,6 @@ print('After reversing', myList)
 # Topic: Loop & Recursion
 # -----------------------
 #1. Factorial using recursion
-
 num = int(input("Enter a number: "))
 
 def factorial(num):
@@ -429,7 +395,6 @@ print(factorial(num))
 # Topic: Arrays & Hashing
 # -----------------------
 #44. Contains Duplicate (Leetcode: 217) - Use set()
-
 nums = [1,2,3,1]
 
 def containDuplicate(nums):
@@ -449,7 +414,6 @@ print(containDuplicate(nums))
 # Topic: Arrays & Hashing
 # -----------------------
 #49. Group Anagrams (Leetcode: 242) - Use dict, ord(), array of 26 characters
-
 from collections import defaultdict
 
 strs = ["eat","tea","tan","ate","nat","bat"]
@@ -466,7 +430,6 @@ def validGroupAnagram(strs):
 print(validGroupAnagram(strs))
 
 #50. Longest Consecutive Sequence (Leetcode: 128) - Use set(), check left number
-
 nums = [100,4,200,1,3,2,5]
 hashSet = set(nums)
 
