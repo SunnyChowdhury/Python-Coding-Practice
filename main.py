@@ -68,7 +68,8 @@ Leetcode: Easy
 
 Leetcode: Medium
 ----------------
-49. 242: Group Anagram ✅
+49. Leetcode 242: Group Anagram ✅
+50. Leetcode 128: Consecutive Sequence ✅
 '''
 
 # Basic programming: Easy
@@ -447,12 +448,12 @@ print(containDuplicate(nums))
 # ----------------
 # Topic: Arrays & Hashing
 # -----------------------
-#45. Group Anagrams (Leetcode: 242) - Use dict, ord()
+#49. Group Anagrams (Leetcode: 242) - Use dict, ord(), array of 26 characters
 
 from collections import defaultdict
 
 strs = ["eat","tea","tan","ate","nat","bat"]
-res = defaultdict(list)
+res = defaultdict(list)   # creates an empty list as a default value, no need to create a key
 
 def validAnagram(strs):
     for s in strs:
@@ -466,3 +467,20 @@ def validAnagram(strs):
     return list(res.values())
 
 print(validAnagram(strs))
+
+#50. Longest Consecutive Sequence (Leetcode: 128) - Use set(), check left number
+
+nums = [100,4,200,1,3,2,5]
+hashSet = set(nums)
+
+def longestConsecutiveSequence(nums):
+    longest = 0
+    for n in nums:
+        if (n-1) not in hashSet:  # check if the left value is present in the set 
+            length = 1
+        while (n+length) in hashSet:
+            length += 1
+        longest = max(length, longest)
+    return longest
+
+print(longestConsecutiveSequence(nums))
