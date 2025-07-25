@@ -455,18 +455,15 @@ from collections import defaultdict
 strs = ["eat","tea","tan","ate","nat","bat"]
 res = defaultdict(list)   # creates an empty list as a default value, no need to create a key
 
-def validAnagram(strs):
+def validGroupAnagram(strs):
     for s in strs:
         count = [0] * 26
-
         for c in s:
             count[ord(c) - ord("a")] +=1  # Map 'a' - 'z' to idex 0 - 25
-
         res[tuple(count)].append(s)
-
     return list(res.values())
 
-print(validAnagram(strs))
+print(validGroupAnagram(strs))
 
 #50. Longest Consecutive Sequence (Leetcode: 128) - Use set(), check left number
 
