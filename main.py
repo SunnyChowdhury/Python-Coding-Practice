@@ -417,17 +417,18 @@ def validGroupAnagram(strs):
 print(validGroupAnagram(strs))
 
 #50. Longest Consecutive Sequence (Leetcode: 128) - Use set(), check left number
-nums = [100,4,200,1,3,2]
+nums = [1,0,1,2]
 hashSet = set(nums)
 
 def longestConsecutiveSequence(nums):
     longest = 0
+    length = 0
     for n in nums:
-        if (n-1) not in hashSet:  # check if the left value is present in the set 
+        if (n - 1) not in hashSet:
             length = 1
-        while (n+length) in hashSet:
+        while (n + length) in hashSet:
             length += 1
-        longest = max(length, longest)
+        longest = max(longest, length)
     return longest
 
 print(longestConsecutiveSequence(nums))
