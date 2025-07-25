@@ -362,12 +362,6 @@ print('Before reversing', myList)
 myList.reverse()
 print('After reversing', myList)
 
-
-
-
-
-
-
 # Basic programming: Medium
 # -------------------------
 # Topic: Loop & Recursion
@@ -385,11 +379,6 @@ def factorial(num):
 
 print(factorial(num))
 
-
-
-
-
-
 # Leetcode: Easy
 # --------------
 # Topic: Arrays & Hashing
@@ -406,8 +395,6 @@ def containDuplicate(nums):
     return False
 
 print(containDuplicate(nums))
-
-
 
 # Leetcode: Medium
 # ----------------
