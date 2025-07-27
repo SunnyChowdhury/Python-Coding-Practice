@@ -65,11 +65,130 @@ Leetcode: Easy
 46. Leetcode: Two Sum (HashMap)
 47. Leetcode: Valid Parentheses (Stack)
 48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
+49. Leetcode - 14: Longest Common Prefix ✅
 
 Leetcode: Medium
 ----------------
 49. Leetcode - 242: Group Anagram ✅
-50. Leetcode - 128: Consecutive Sequence ✅
+50. Leetcode - 128: Longest Consecutive Sequence ✅
+
+AI recommendation for SDET
+--------------------------
+📁 Arrays & Hashing: Easy
+-------------------------
+1. Two Sum (#1) - array + hashmap
+2. Contains Duplicate (#217)
+3. Intersection of Two Arrays (#349)
+4. Majority Element (#169)
+5. Product of Array Except Self (#238)
+6. Top K Frequent Elements (#347)
+7. Find Missing Number / Missing Ranges (#268 / #163)
+8. Longest Consecutive Sequence (#128) ✅
+
+📁 Arrays & Hashing: Medium
+---------------------------
+9. Subarray Sum Equals K (#560)
+10. 3Sum (#15) 
+11. Group Anagrams (#49) ✅
+12. Top K Frequent Words (#692)
+13. Longest Subarray with Equal 0s and 1s (#525)
+14. Maximum Size Subarray Sum Equals K (variation of #560)
+
+🔤 Strings & Sliding Window: Easy
+---------------------------------
+15. Valid Anagram (#242)
+16. First Unique Character in a String (#387)
+17. Reverse String (#344)
+18. Valid Palindrome (#125)
+19. Implement strStr() (#28)
+20. Count and Say (#38)
+
+🔤 Strings & Sliding Window: Medium
+-----------------------------------
+21. Longest Substring Without Repeating Characters (#3)
+22. Minimum Window Substring (#76)
+23. Longest Repeating Character Replacement (#424)
+24. Valid Parentheses (#20)
+25. Longest Palindromic Substring (#5)
+26. Find All Anagrams in a String (#438)
+
+🔁 Two Pointers, Sorting & Intervals: Easy
+------------------------------------------
+27. Move Zeroes (#283)
+28. 2Sum II - Input array sorted (#167)
+29. Merge Sorted Array (#88)
+30. Valid Palindrome II (#680)
+31. Container With Most Water (#11)
+
+🔁 Two Pointers, Sorting & Intervals: Medium
+--------------------------------------------
+32. Sort Colors (Dutch Flag) (#75)
+33. 3Sum Closest (#16)
+34. Remove Duplicates from Sorted Array (#26)
+35. Intersection of Two Arrays II (#350)
+36. Merge Intervals (#56)
+
+🗂 Stacks & Queues: Easy
+------------------------
+37. Valid Parentheses (#20)
+38. Min Stack (#155)
+39. Implement Queue using Stacks (#232)
+
+🗂 Stacks & Queues: Medium
+--------------------------
+40. Next Greater Element (#496)
+41. Sliding Window Maximum (#239)
+42. Evaluate Reverse Polish Notation (#150)
+
+🔁 Recursion & Backtracking (Basic): Easy
+-----------------------------------------
+43. Fibonacci Number (#509)
+44. Factorial recursion or Sum of Digits (not official LeetCode)
+45. Sum of digits (custom but base recursion problem)
+
+🔁 Recursion & Backtracking (Basic): Medium
+-------------------------------------------
+46. Generate Parentheses (#22)
+47. Subsets (#78)
+48. Combinations (#77)
+49. Word Search (#79)
+
+🔍 Binary Search & Matrix: Easy
+-------------------------------
+50. Binary Search (#704)
+51. Search Insert Position (#35)
+52. Guess Number Higher or Lower (#374)
+53. Find First and Last Position of Element (#34)
+
+🔍 Binary Search & Matrix: Medium
+---------------------------------
+54. Search a 2D Matrix (#74)
+55. Kth Smallest Element in a Sorted Matrix (#378)
+56. Divide Two Integers (#29)
+
+🌳 Binary Tree & Graph (Optional mostly): Medium
+------------------------------------------------
+57. Maximum Depth of Binary Tree (#104)
+58. Same Tree / Symmetric Tree (#100 / #101)
+59. Binary Tree Level Order Traversal (#102)
+60. Validate Binary Search Tree (#98)
+
+🌳 Binary Tree & Graph (Optional extra senior topics): Medium
+-------------------------------------------------------------
+61. Lowest Common Ancestor (#236)
+62. Course Schedule (Graph) (#207)
+
+➕ Bit Manipulation & Math: Easy
+--------------------------------
+63. Single Number (#136)
+64. Hamming Distance (#461)
+65. Power of Two (#231)
+
+➕ Bit Manipulation & Math: Medium
+----------------------------------
+67. Count Bits (#338)
+68. Number of 1 Bits (#191)
+69. Bits manipulation variants (e.g. #190 or #137)
 '''
 
 # Basic programming: Easy
@@ -77,8 +196,8 @@ Leetcode: Medium
 # Topic: Variables and Data Types
 # -------------------------------
 #1. Swap two numbers - Using Tuple
-num1 = input('Enter the first number: ')
-num2 = input('Enter the second number: ')
+num1 = int(input('Enter the first number: '))
+num2 = int(input('Enter the second number: '))
 
 print('First number: ', num1)
 print('Second number: ', num2)
@@ -91,8 +210,8 @@ print('Second number: ', num2)
 
 
 #1a. Swap two numbers - Using a third variable
-num1 = input('Enter the first number: ')
-num2 = input('Enter the second number: ')
+num1 = int(input('Enter the first number: '))
+num2 = int(input('Enter the second number: '))
 
 print('First number: ', num1)
 print('Second number: ', num2)
@@ -136,7 +255,7 @@ else:
     else:
         print(f'{num} is not a prime number')
 
-#2a. Check if a number is prime number - using math.sqrt() function
+#2a. Check if a number is prime number - using math.sqrt() function, start range from 2
 import math
 num = int(input("Enter a number: "))
 
@@ -395,6 +514,21 @@ def containDuplicate(nums):
     return False
 
 print(containDuplicate(nums))
+
+#45. Longest Common Prefix (Leetcode: 14)
+strs = ["flower","flow","flight"]
+
+def longestCommonPrefix(strs):
+    res = ""
+    for i in range(len(strs[0])):
+        for s in strs:
+            if i == len(s) or s[i] != strs[0][i]:
+                return res
+        res += strs[0][i]
+    
+    return res
+
+print(longestCommonPrefix(strs))
 
 # Leetcode: Medium
 # ----------------
