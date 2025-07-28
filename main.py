@@ -66,6 +66,7 @@ Leetcode: Easy
 47. Leetcode: Valid Parentheses (Stack)
 48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
 49. Leetcode - 14: Longest Common Prefix ✅
+50. Leetcode - 1929: Concatenation of Array (Leetcode: 1929) ✅
 
 Leetcode: Medium
 ----------------
@@ -529,6 +530,21 @@ def longestCommonPrefix(strs):
     return res
 
 print(longestCommonPrefix(strs))
+
+#50. Concatenation of Array (Leetcode: 1929)
+nums = [1,3,2,1]
+ans = []
+iteration = int(input('Enter the number of times you want to concatenate the array: '))
+
+
+def concatenationOfArray(nums, x):
+    for i in range(x):
+        for i in nums:
+            ans.append(i)
+
+    return ans
+
+print(concatenationOfArray(nums,iteration))
 
 # Leetcode: Medium
 # ----------------
