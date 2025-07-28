@@ -66,7 +66,7 @@ Leetcode: Easy
 47. Leetcode: Valid Parentheses (Stack)
 48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
 49. Leetcode - 14: Longest Common Prefix ✅
-50. Leetcode - 1929: Concatenation of Array (Leetcode: 1929) ✅
+50. Leetcode - 1929: Concatenation of Array ✅
 
 Leetcode: Medium
 ----------------
