@@ -19,8 +19,8 @@ Basic programming: Easy
 16. Count occurrences of an element
 17. Multiply elements of a list
 18. 2nd largest/smallest element
-19. Check palindrome (word/string)
-20. Reverse words in a string
+19. Check palindrome (word/string) ✅
+20. Reverse words in a string ✅
 21. Substring search (and frequency)
 22. String length
 23. Sum of all odd/even numbers
@@ -33,7 +33,7 @@ Basic programming: Medium
 -------------------------
 28. Factorial using recursion ✅
 29. Fibonacci sequence with recursion and validation
-30. Remove duplicate words and return a string
+30. Remove duplicate words and return a string/list ✅
 31. Check for special characters using regex
 32. Check for URLs in strings using regex
 
@@ -482,11 +482,29 @@ print('Before reversing', myList)
 myList.reverse()
 print('After reversing', myList)
 
+#19. Check palindrome (word/string)
+s = "madam madam"
+
+def isPalindrome(s):
+    if s == s[::-1]:
+        return True
+    else:
+        return False
+
+print(isPalindrome(s))
+
+#20. Reverse words in a string
+string = input("Enter the words of string seperated by comma: ")
+print(string)
+newString = string.split(" ")
+reverse_word = " ".join(newString[::-1])
+print("The reverses string is: ", reverse_word)
+
 # Basic programming: Medium
 # -------------------------
 # Topic: Loop & Recursion
 # -----------------------
-#1. Factorial using recursion
+#28. Factorial using recursion
 num = int(input("Enter a number: "))
 
 def factorial(num):
@@ -498,6 +516,18 @@ def factorial(num):
         return num * factorial(num-1)
 
 print(factorial(num))
+
+#30. Remove duplicate words and return a string
+string = input("Enter the words of string seperated by comma: ")
+print(string)
+newString = set(string.split())
+print(newString)
+
+#30a. Remove duplicate words and return a list
+string = input("Enter the words of string seperated by comma: ")
+print(string)
+newString = set(string.split())
+print(list(newString))
 
 # Leetcode: Easy
 # --------------
