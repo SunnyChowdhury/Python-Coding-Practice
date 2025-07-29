@@ -592,6 +592,7 @@ def removeElement(nums, val):
 print(removeElement(nums, val))
 
 
+
 # Leetcode: Medium
 # ----------------
 # Topic: Arrays & Hashing
