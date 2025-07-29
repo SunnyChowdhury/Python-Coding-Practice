@@ -67,11 +67,13 @@ Leetcode: Easy
 48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
 49. Leetcode - 14: Longest Common Prefix ✅
 50. Leetcode - 1929: Concatenation of Array ✅
+51. Leetcode - 27: Remove Element ✅
 
 Leetcode: Medium
 ----------------
 49. Leetcode - 242: Group Anagram ✅
 50. Leetcode - 128: Longest Consecutive Sequence ✅
+51. Leetcode - 3: Longest Substring Without Repeating Characters
 
 AI recommendation for SDET
 --------------------------
@@ -566,7 +568,6 @@ nums = [1,3,2,1]
 ans = []
 iteration = int(input('Enter the number of times you want to concatenate the array: '))
 
-
 def concatenationOfArray(nums, x):
     for i in range(x):
         for i in nums:
@@ -575,6 +576,21 @@ def concatenationOfArray(nums, x):
     return ans
 
 print(concatenationOfArray(nums,iteration))
+
+#51. Remove Element (Leetcode: 27)
+nums = [0,1,2,2,3,0,4,2]
+val = 2
+
+def removeElement(nums, val):
+    k = 0
+    for i in range(len(nums)):
+        if nums[i] != val:
+            nums[k] = nums[i]
+            k += 1
+    return k
+
+print(removeElement(nums, val))
+
 
 # Leetcode: Medium
 # ----------------
