@@ -64,7 +64,7 @@ Leetcode: Easy
 45. Leetcode: Valid Anagram (Counter, sort, hashmap approaches)
 46. Leetcode: Two Sum (HashMap)
 47. Leetcode: Valid Parentheses (Stack)
-48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
+48. Leetcode - 125: Valid Palindrome (Two pointers with alphanum validation) ✅
 49. Leetcode - 14: Longest Common Prefix ✅
 50. Leetcode - 1929: Concatenation of Array ✅
 51. Leetcode - 27: Remove Element ✅
@@ -563,7 +563,7 @@ def longestCommonPrefix(strs):
 
 print(longestCommonPrefix(strs))
 
-#50. Concatenation of Array (Leetcode: 1929)
+#50. Concatenation of Array (Leetcode: 1929) - Nested for loop with append()
 nums = [1,3,2,1]
 ans = []
 iteration = int(input('Enter the number of times you want to concatenate the array: '))
@@ -597,6 +597,44 @@ print(removeElement(nums, val))
 # ----------------
 # Topic: Arrays & Hashing
 # -----------------------
+#48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
+s = "A man, a plan, a canal: Panama"
+
+def alphaNum(s):
+    return (ord('A') <= ord(s) <= ord('Z') or ord('a') <= ord(s) <= ord('z') or (ord('0') <= ord(s) <= ord('9')))
+
+def isPalindrome(s):
+    left, right = 0, len(s) - 1 
+    while left < right:
+        # Move left pointer until an alphanumeric character is found
+        # not alphaNumber function skip over any non alphanumeric character
+        while left < right and not alphaNum(s[left]):
+            left += 1
+        # Move right pointer until an alphanumeric character is found
+        while right > left and not alphaNum(s[right]):
+            right -= 1
+        # Check if characters are not equal (ignoring case)
+        if s[left].lower() != s[right].lower():
+            return False
+        # Move both pointers towards the center
+        left += 1
+        right -= 1
+
+    return True
+
+print(isPalindrome(s))
+
+#48a. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
+s = "A man, a plan, a canal: Panama"
+def validPalindrome(s):
+    newStr = ""
+    for c in s:
+        if c.isalnum():
+            newStr += c.lower()
+    return newStr == newStr[::-1]
+
+print(validPalindrome(s))
+
 #49. Group Anagrams (Leetcode: 242) - Use dict, ord(), array of 26 characters
 from collections import defaultdict
 
