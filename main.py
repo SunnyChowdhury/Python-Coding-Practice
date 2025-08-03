@@ -90,7 +90,7 @@ AI recommendation for SDET
 📁 Arrays & Hashing: Easy
 -------------------------
 1. Two Sum (#1) - array + hashmap
-2. Contains Duplicate (#217)
+2. Contains Duplicate (#217) ✅
 3. Intersection of Two Arrays (#349)
 4. Majority Element (#169)
 5. Product of Array Except Self (#238)
@@ -130,7 +130,7 @@ AI recommendation for SDET
 27. Move Zeroes (#283)
 28. 2Sum II - Input array sorted (#167)
 29. Merge Sorted Array (#88)
-30. Valid Palindrome II (#680)
+30. Valid Palindrome II (#680) ✅
 31. Container With Most Water (#11)
 
 🔁 Two Pointers, Sorting & Intervals: Medium
