@@ -58,22 +58,32 @@ Basic programming: Advanced
 42. Writing Parameterized Tests with Pytest
 43. Database interaction using sqlite3
 
-Leetcode: Easy
---------------
-44. Leetcode - 217: Contains Duplicate (Set) ✅
-45. Leetcode: Valid Anagram (Counter, sort, hashmap approaches)
-46. Leetcode: Two Sum (HashMap)
-47. Leetcode: Valid Parentheses (Stack)
-48. Leetcode - 125: Valid Palindrome (Two pointers with alphanum validation) ✅
-49. Leetcode - 14: Longest Common Prefix ✅
-50. Leetcode - 1929: Concatenation of Array ✅
-51. Leetcode - 27: Remove Element ✅
+Leetcode: Array & Hashing : Easy
+--------------------------------
+1929. Concatenation of Array ✅
+217. Contains Duplicate ✅
+242. Valid Anagram
+1. Two Sum
+14. Longest Common Prefix ✅
 
-Leetcode: Medium
-----------------
-49. Leetcode - 242: Group Anagram ✅
-50. Leetcode - 128: Longest Consecutive Sequence ✅
-51. Leetcode - 3: Longest Substring Without Repeating Characters
+Leetcode: Array & Hashing : Medium
+----------------------------------
+49. Group Anagrams ✅
+128. Longest Consecutive Sequence ✅
+
+Leetcode: Two Pointers : Easy
+-----------------------------
+125. Valid Anagram  ✅
+680. Valid Palindrome II ✅
+
+Leetcode: Sliding Window : Medium
+----------------------------------
+3. Longest Substring Without Repeating Characters
+
+
+
+
+
 
 AI recommendation for SDET
 --------------------------
@@ -634,6 +644,28 @@ def validPalindrome(s):
     return newStr == newStr[::-1]
 
 print(validPalindrome(s))
+
+#680. Valid Palindrome II
+s = "racecarx"
+
+def validPalindromeHelper(s, left, right):
+    while left < right: 
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+def validPalindromeTwo(s):
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        return validPalindromeHelper(s, left + 1, right) or validPalindromeHelper(s, left, right - 1)
+        left += 1
+        right -= 1
+    return True
+
+print(validPalindromeTwo(s))
 
 #49. Group Anagrams (Leetcode: 242) - Use dict, ord(), array of 26 characters
 from collections import defaultdict
