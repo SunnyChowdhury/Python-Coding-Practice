@@ -24,7 +24,7 @@ Basic programming: Easy
 21. Substring search (and frequency)
 22. String length
 23. Sum of all odd/even numbers
-24. First/all repeating character in a string
+24. First/all repeating character in a string ✅
 25. FizzBuzz
 26. Reverse a number
 27. Add first and last elements of two lists
@@ -511,6 +511,34 @@ print(string)
 newString = string.split(" ")
 reverse_word = " ".join(newString[::-1])
 print("The reverses string is: ", reverse_word)
+
+#24. First repeating character in a string - break as soon as the first character is found
+s = "aabcde"
+repeatedCharacter = set()
+
+for c in s:
+    if s.count(c) > 1:
+        repeatedCharacter.add(c)
+        break
+
+if len(repeatedCharacter) > 0:
+    print('The first repeated character is', list(repeatedCharacter)[0])
+else:
+    print('There is no repeacting character')
+
+#24a. All repeating character in a string - print out a list/tuple etc
+s = "aabbcde"
+repeatedCharacter = set()
+
+for c in s:
+    if s.count(c) > 1:
+        repeatedCharacter.add(c)
+
+if len(repeatedCharacter) > 0:
+    print('The first repeated character is', list(repeatedCharacter))
+else:
+    print('There is no repeacting character')
+
 
 # Basic programming: Medium
 # -------------------------
