@@ -62,7 +62,7 @@ Leetcode: Array & Hashing : Easy
 --------------------------------
 1929. Concatenation of Array ✅
 217. Contains Duplicate ✅
-242. Valid Anagram
+242. Valid Anagram ✅
 1. Two Sum
 14. Longest Common Prefix ✅
 
@@ -585,6 +585,52 @@ def containDuplicate(nums):
     return False
 
 print(containDuplicate(nums))
+
+#242. Valid Anagram - Counter method
+from collections import Counter
+s = "anagram"
+t = "nagaram"
+
+def validAnagram(s, t):
+    return Counter(s) == Counter(t)
+
+print(validAnagram(s, t))
+
+#242a. Valid Anagram - Sorted method
+s = "anagram"
+t = "nagaram"
+
+def validAnagram(s, t):
+    return sorted(s) == sorted(t)
+
+print(validAnagram(s, t))
+
+#242b. Valid Anagram - Using hasmap algorithm, use .get(key, default)
+s = "anagram"
+t = "nagaram"
+
+def validAnagram(s, t):
+    if len(s) != len(t):
+        return False
+    
+    # create a hashmap/dictionary
+    count = {} 
+
+    # add all they keys and values into the hashmap
+    for char in s:
+        count[char] = count.get(char, 0) + 1
+
+    # check the keys from string t with the hashmap and delete one key at a time
+    for char in t:
+        if char not in count:
+            return False
+        count[char] -= 1
+        if count[char] < 0:
+            return False
+    
+    return True
+
+print(validAnagram(s, t))
 
 #45. Longest Common Prefix (Leetcode: 14)
 strs = ["flower","flow","flight"]
