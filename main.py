@@ -63,8 +63,9 @@ Leetcode: Array & Hashing : Easy
 1929. Concatenation of Array ✅
 217. Contains Duplicate ✅
 242. Valid Anagram ✅
-1. Two Sum
+1. Two Sum ✅
 14. Longest Common Prefix ✅
+27. Remove Element ✅
 
 Leetcode: Array & Hashing : Medium
 ----------------------------------
@@ -573,6 +574,20 @@ print(list(newString))
 # --------------
 # Topic: Arrays & Hashing
 # -----------------------
+#1929. Concatenation of Array - Nested for loop with append()
+nums = [1,3,2,1]
+ans = []
+iteration = int(input('Enter the number of times you want to concatenate the array: '))
+
+def concatenationOfArray(nums, x):
+    for i in range(x):
+        for i in nums:
+            ans.append(i)
+
+    return ans
+
+print(concatenationOfArray(nums,iteration))
+
 #44. Contains Duplicate (Leetcode: 217) - Use set()
 nums = [1,2,3,1]
 
@@ -632,6 +647,20 @@ def validAnagram(s, t):
 
 print(validAnagram(s, t))
 
+#1. Two Sum - {value: index}, storing the value as the key and the index as the value
+nums = [2,7,11,15]
+target = 9
+
+def twoSum(nums, target):
+    prevMap = {}
+    for index, number in enumerate(nums):
+        diff = target - number
+        if diff in prevMap:
+            return prevMap[diff], index
+        prevMap[number] = index
+
+print(twoSum(nums, target))
+
 #45. Longest Common Prefix (Leetcode: 14)
 strs = ["flower","flow","flight"]
 
@@ -646,20 +675,6 @@ def longestCommonPrefix(strs):
     return res
 
 print(longestCommonPrefix(strs))
-
-#50. Concatenation of Array (Leetcode: 1929) - Nested for loop with append()
-nums = [1,3,2,1]
-ans = []
-iteration = int(input('Enter the number of times you want to concatenate the array: '))
-
-def concatenationOfArray(nums, x):
-    for i in range(x):
-        for i in nums:
-            ans.append(i)
-
-    return ans
-
-print(concatenationOfArray(nums,iteration))
 
 #51. Remove Element (Leetcode: 27)
 nums = [0,1,2,2,3,0,4,2]
