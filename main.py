@@ -90,7 +90,7 @@ AI recommendation for SDET
 --------------------------
 📁 Arrays & Hashing: Easy
 -------------------------
-1. Two Sum (#1) - array + hashmap
+1. Two Sum (#1) - array + hashmap ✅
 2. Contains Duplicate (#217) ✅
 3. Intersection of Two Arrays (#349)
 4. Majority Element (#169)
@@ -110,7 +110,7 @@ AI recommendation for SDET
 
 🔤 Strings & Sliding Window: Easy
 ---------------------------------
-15. Valid Anagram (#242)
+15. Valid Anagram (#242) ✅
 16. First Unique Character in a String (#387)
 17. Reverse String (#344)
 18. Valid Palindrome (#125)
