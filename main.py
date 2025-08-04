@@ -27,7 +27,7 @@ Basic programming: Easy
 24. First/all repeating character in a string ✅
 25. FizzBuzz
 26. Reverse a number
-27. Add first and last elements of two lists
+27. Add first and last elements of two lists ✅
 
 Basic programming: Medium
 -------------------------
@@ -540,6 +540,15 @@ if len(repeatedCharacter) > 0:
 else:
     print('There is no repeacting character')
 
+#27. Add the first element with last element of two distinct list
+listOne = [1, 2, 3, 4, 5]
+listTwo = [6, 7, 8, 9, 10]
+newList = []
+
+for i in range(len(listOne)):
+    newList.append(listOne[i] + listTwo[len(listTwo) - i - 1])
+
+print(newList)
 
 # Basic programming: Medium
 # -------------------------
