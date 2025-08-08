@@ -79,7 +79,7 @@ Leetcode: Array & Hashing : Easy
 
 Leetcode: Array & Hashing : Medium
 ----------------------------------
-49. Group Anagrams ✅
+242. Group Anagrams ✅
 128. Longest Consecutive Sequence ✅
 
 Leetcode: Two Pointers : Easy
@@ -602,10 +602,8 @@ print(list(newString))
 
 #34. Check for URLs in strings using regex
 
-# Leetcode: Easy
-# --------------
-# Topic: Arrays & Hashing
-# -----------------------
+# Leetcode: Arrays & Hashing: Easy
+# --------------------------------
 #1929. Concatenation of Array - Nested for loop with append()
 nums = [1,3,2,1]
 ans = []
@@ -620,7 +618,7 @@ def concatenationOfArray(nums, x):
 
 print(concatenationOfArray(nums,iteration))
 
-#44. Contains Duplicate (Leetcode: 217) - Use set()
+#217. Contains Duplicate - Use set()
 nums = [1,2,3,1]
 
 def containDuplicate(nums):
@@ -693,7 +691,7 @@ def twoSum(nums, target):
 
 print(twoSum(nums, target))
 
-#45. Longest Common Prefix (Leetcode: 14)
+#14. Longest Common Prefix
 strs = ["flower","flow","flight"]
 
 def longestCommonPrefix(strs):
@@ -708,7 +706,7 @@ def longestCommonPrefix(strs):
 
 print(longestCommonPrefix(strs))
 
-#51. Remove Element (Leetcode: 27)
+#27. Remove Element
 nums = [0,1,2,2,3,0,4,2]
 val = 2
 
@@ -722,13 +720,9 @@ def removeElement(nums, val):
 
 print(removeElement(nums, val))
 
-
-
-# Leetcode: Medium
-# ----------------
-# Topic: Arrays & Hashing
-# -----------------------
-#48. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
+# Leetcode: Arrays & Hashing: Medium
+# ----------------------------------
+#48. Valid Palindrome - Two pointers with alphanum validation
 s = "A man, a plan, a canal: Panama"
 
 def alphaNum(s):
@@ -788,7 +782,9 @@ def validPalindromeTwo(s):
 
 print(validPalindromeTwo(s))
 
-#49. Group Anagrams (Leetcode: 242) - Use dict, ord(), array of 26 characters
+# Leetcode: Array & Hashing : Medium
+# ----------------------------------
+#242. Group Anagrams - Use dict, ord(), array of 26 characters
 from collections import defaultdict
 
 strs = ["eat","tea","tan","ate","nat","bat"]
@@ -804,7 +800,7 @@ def validGroupAnagram(strs):
 
 print(validGroupAnagram(strs))
 
-#50. Longest Consecutive Sequence (Leetcode: 128) - Use set(), check left number
+#128. Longest Consecutive Sequence - Use set(), check left number
 nums = [1,0,1,2]
 hashSet = set(nums)
 
