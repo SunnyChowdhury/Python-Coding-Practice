@@ -48,21 +48,21 @@ Basic programming
 #33. Check for special characters using regex
 #34. Check for URLs in strings using regex
 #35. LRU Cache Implementation
-    collections.OrderedDict or Custom LinkedList + HashMap approach.
+     collections.OrderedDict or Custom LinkedList + HashMap approach.
 #36. Multithreading in Python (threading module)
-    Write a program that starts multiple threads to compute parts of a task.
+     Write a program that starts multiple threads to compute parts of a task.
 #37. Producer-Consumer Problem using Queues
 #38. Decorator Functions
-    Implement a timing/decorator to log function performance.
+     Implement a timing/decorator to log function performance.
 #39. Using functools.reduce() and map() on a real problem
 #40. Recursive Backtracking
-    E.g. generating permutations, solving N-Queens.
+     E.g. generating permutations, solving N-Queens.
 #41. Custom Exception Handling
-    Define custom errors for test validations.
+     Define custom errors for test validations.
 #42. Use unittest or pytest
-    Write end-to-end test for a Python module with mocking.
+     Write end-to-end test for a Python module with mocking.
 #43. Parsing JSON / XML / API response
-    Useful for SDET testing pipelines.
+     Useful for SDET testing pipelines.
 #44. Writing Parameterized Tests with Pytest
 #45. Database interaction using sqlite3
 
