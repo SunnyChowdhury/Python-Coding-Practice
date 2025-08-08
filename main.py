@@ -1,62 +1,70 @@
 '''
-Basic programming: Easy
------------------------
-1. Swap two numbers (with/without temp) ✅
-2. Check if a number is prime ✅
-3. Find factorial (non-recursive) ✅
-4. Fibonacci series (basic recursion) ✅
-5. Print sum of elements in a list ✅
-6. Find max/min elements in a list ✅
-7. Find index of max/min elements ✅
-8. Find length of a list ✅
-9. Count specific word occurrences ✅
-10. Swap first/last or any two elements in a list ✅
-11. Remove duplicates from string (set-based) ✅
-12. Search an element in a list ✅
-13. Clear a list ✅
-14. Reverse a list ✅
-15. Clone/copy a list (5 approaches)
-16. Count occurrences of an element
-17. Multiply elements of a list
-18. 2nd largest/smallest element
-19. Check palindrome (word/string) ✅
-20. Reverse words in a string ✅
-21. Substring search (and frequency)
-22. String length
-23. Sum of all odd/even numbers
-24. First/all repeating character in a string ✅
-25. FizzBuzz
-26. Reverse a number
-27. Add first and last elements of two lists ✅
-
-Basic programming: Medium
--------------------------
-28. Factorial using recursion ✅
-29. Fibonacci sequence with recursion and validation
-30. Remove duplicate words and return a string/list ✅
-31. Check for special characters using regex
-32. Check for URLs in strings using regex
-
-Basic programming: Advanced
----------------------------
-33. LRU Cache Implementation
+Basic programming
+-----------------
+#1. Swap two numbers - Using Tuple ✅
+#1a. Swap two numbers - Using a third variable ✅
+#1b. Swap two numbers - Without using a third variable ✅
+#2. Check if a number is prime number ✅
+#2a. Check if a number is prime number - using math.sqrt() function, start range from 2 ✅
+#3. Find factorial (non-recursion) ✅
+#4. Fibonacci series (basic recursion) - Print Fibonacci Sequence: 0 1 1 2 3 5 ✅
+#5. Print sum of elements in a list - Using for loop ✅
+#5a. Print sum of elements in a list - Using for loop and range function ✅
+#5b. Print sum of elements in a list - Using built in sum() method ✅
+#6. Find Maximum & Minimum Element in an Array - Using for loop ✅
+#6a. Find Maximum & Minimum Element in an Array - Using for loop and range function , range function print indices, compare with index ✅
+#7. Find The index of Maximum & Minimum Element in an Array - list[i] = element, i = array index ✅
+#8. Find the length of a list/Array - Using built in len() method ✅
+#8a. Find the length of a list/Array - Using for loop ✅
+#8b. Find the length of a list/Array - when list is created by user ✅
+#9. Count specific word occurrences - Iterate through every element & indices ✅
+#10. Swap first/last or any two elements in a list ✅
+#11. Swap any two elements of a list ✅
+#12. Remove the duplicate occurrence of words in a string and return a list ✅
+#13. Remove the duplicate words from a string and return a string ✅
+#14. Search an Element from a list - Using for loop ✅
+#14a. Search an Element from a list - Using 'in' operator ✅
+#15. Clear a list ✅
+#16. Reverse a list - Using slicing ✅
+#16a. Reverse a list - Using reverse() method ✅
+#17. Clone/copy a list (5 approaches)
+#18. Count occurrences of an element
+#19. Multiply elements of a list
+#20. 2nd largest/smallest element
+#21. Check palindrome (word/string)
+#22. Reverse words in a string ✅
+#23. Substring search (and frequency)
+#24. String length
+#25. Sum of all odd/even numbers
+#26. First/all repeating character in a string ✅
+#27. FizzBuzz
+#28. Reverse a number
+#29. First repeating character in a string - break as soon as the first character is found
+#29a. All repeating character in a string - print out a list/tuple etc
+#30. Add the first element with last element of two distinct list ✅
+#31. Factorial using recursion ✅
+#32. Remove duplicate words and return a string ✅
+#32a. Remove duplicate words and return a list ✅
+#33. Check for special characters using regex
+#34. Check for URLs in strings using regex
+#35. LRU Cache Implementation
     collections.OrderedDict or Custom LinkedList + HashMap approach.
-34. Multithreading in Python (threading module)
+#36. Multithreading in Python (threading module)
     Write a program that starts multiple threads to compute parts of a task.
-35. Producer-Consumer Problem using Queues
-36. Decorator Functions
+#37. Producer-Consumer Problem using Queues
+#38. Decorator Functions
     Implement a timing/decorator to log function performance.
-37. Using functools.reduce() and map() on a real problem
-38. Recursive Backtracking
+#39. Using functools.reduce() and map() on a real problem
+#40. Recursive Backtracking
     E.g. generating permutations, solving N-Queens.
-39. Custom Exception Handling
+#41. Custom Exception Handling
     Define custom errors for test validations.
-40. Use unittest or pytest
+#42. Use unittest or pytest
     Write end-to-end test for a Python module with mocking.
-41. Parsing JSON / XML / API response
+#43. Parsing JSON / XML / API response
     Useful for SDET testing pipelines.
-42. Writing Parameterized Tests with Pytest
-43. Database interaction using sqlite3
+#44. Writing Parameterized Tests with Pytest
+#45. Database interaction using sqlite3
 
 Leetcode: Array & Hashing : Easy
 --------------------------------
@@ -401,7 +409,7 @@ userList = input("Enter the numbers separated by space: ")
 total = userList.split()
 print(len(total))
 
-#9. Count specific word occurrences
+#9. Count specific word occurrences - Iterate through every element & indices
 str = "my name is sunny giving interview sunny knows python"
 count = 0
 count1 = 0
