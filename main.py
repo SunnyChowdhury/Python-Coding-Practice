@@ -209,10 +209,8 @@ AI recommendation for SDET
 69. Bits manipulation variants (e.g. #190 or #137)
 '''
 
-# Basic programming: Easy
-# ------------------------
-# Topic: Variables and Data Types
-# -------------------------------
+# Basic programming
+# -----------------
 #1. Swap two numbers - Using Tuple
 num1 = int(input('Enter the first number: '))
 num2 = int(input('Enter the second number: '))
@@ -554,10 +552,6 @@ for i in range(len(listOne)):
 
 print(newList)
 
-# Basic programming: Medium
-# -------------------------
-# Topic: Loop & Recursion
-# -----------------------
 #28. Factorial using recursion
 num = int(input("Enter a number: "))
 
