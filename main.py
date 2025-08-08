@@ -79,11 +79,7 @@ Leetcode: Two Pointers : Easy
 
 Leetcode: Sliding Window : Medium
 ----------------------------------
-3. Longest Substring Without Repeating Characters
-
-
-
-
+3. Longest Substring Without Repeating Characters ✅
 
 
 AI recommendation for SDET
@@ -119,7 +115,7 @@ AI recommendation for SDET
 
 🔤 Strings & Sliding Window: Medium
 -----------------------------------
-21. Longest Substring Without Repeating Characters (#3)
+21. Longest Substring Without Repeating Characters (#3) ✅
 22. Minimum Window Substring (#76)
 23. Longest Repeating Character Replacement (#424)
 24. Valid Parentheses (#20)
