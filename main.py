@@ -797,3 +797,24 @@ def longestConsecutiveSequence(nums):
     return longest
 
 print(longestConsecutiveSequence(nums))
+
+#Leetcode: Sliding Window : Medium
+#----------------------------------
+#3. Longest Substring Without Repeating Characters
+s = "abcabcbb"
+
+def longestSubstingWithoutReapeatingCharacters(s):
+    charSet = set()
+    l = 0
+    res = 0
+
+    for r in range(len(s)):
+        while s[r] in charSet:
+            charSet.remove(s[l])
+            l += 1
+        charSet.add(s[r])
+        res = max(res, r - l + 1)
+
+    return res
+
+print(longestSubstingWithoutReapeatingCharacters(s))
