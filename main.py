@@ -36,6 +36,8 @@ Basic programming
 #23. Substring search (and frequency)
 #24. String length
 #25. Sum of all odd/even numbers
+#26. First repeating character in a string - break as soon as the first character is found ✅
+#26a. All repeating character in a string - print out a list/tuple etc ✅
 #26. First/all repeating character in a string ✅
 #27. FizzBuzz
 #28. Reverse a number
@@ -88,7 +90,6 @@ Leetcode: Two Pointers : Easy
 Leetcode: Sliding Window : Medium
 ----------------------------------
 3. Longest Substring Without Repeating Characters ✅
-
 
 AI recommendation for SDET
 --------------------------
@@ -322,8 +323,6 @@ while True:
     else:
         print("Enter a positive number")
 
-# Topic: Lists/Arrarys
-# ---------------------
 #5. Print sum of elements in a list - Using for loop
 arr = [10, 20, 30, 40, 50]
 total = 0
@@ -436,7 +435,7 @@ arr[0], arr[-1] = arr[-1], arr[0]
 print(arr[0])
 print(arr[-1])
 
-#11.  Swap any two elements of a list:
+#11. Swap any two elements of a list
 arr = [12, 35, 9, 56, 24]
 print(arr[1])
 print(arr[3])
@@ -446,12 +445,12 @@ arr[1], arr[3] = arr[3], arr[1]
 print(arr[1])
 print(arr[3])
 
-#12. Remove the duplicate occurrence of words in a string and return a list:
+#12. Remove the duplicate occurrence of words in a string and return a list
 input_str = input("Enter words separated by spaces: ")
 uniqueWords = set(input_str.split())
 print(list(uniqueWords))
 
-#13. Remove the duplicate words from a string and return a string:
+#13. Remove the duplicate words from a string and return a string
 input_str = input("Enter words separated by spaces: ")
 print(input_str)
 newStr = set(input_str.split())
@@ -497,7 +496,15 @@ print('Before reversing', myList)
 myList.reverse()
 print('After reversing', myList)
 
-#19. Check palindrome (word/string)
+#17. Clone/copy a list (5 approaches)
+
+#18. Count occurrences of an element
+
+#19. Multiply elements of a list
+
+#20. 2nd largest/smallest element
+
+#21. Check palindrome (word/string)
 s = "madam madam"
 
 def isPalindrome(s):
@@ -508,14 +515,20 @@ def isPalindrome(s):
 
 print(isPalindrome(s))
 
-#20. Reverse words in a string
+#22. Reverse words in a string
 string = input("Enter the words of string seperated by comma: ")
 print(string)
 newString = string.split(" ")
 reverse_word = " ".join(newString[::-1])
 print("The reverses string is: ", reverse_word)
 
-#24. First repeating character in a string - break as soon as the first character is found
+#23. Substring search (and frequency)
+
+#24. String length
+
+#25. Sum of all odd/even numbers
+
+#26. First repeating character in a string - break as soon as the first character is found
 s = "aabcde"
 repeatedCharacter = set()
 
@@ -529,7 +542,7 @@ if len(repeatedCharacter) > 0:
 else:
     print('There is no repeacting character')
 
-#24a. All repeating character in a string - print out a list/tuple etc
+#26a. All repeating character in a string - print out a list/tuple etc
 s = "aabbcde"
 repeatedCharacter = set()
 
@@ -542,7 +555,15 @@ if len(repeatedCharacter) > 0:
 else:
     print('There is no repeacting character')
 
-#27. Add the first element with last element of two distinct list
+#27. FizzBuzz
+
+#28. Reverse a number
+
+#29. First repeating character in a string - break as soon as the first character is found
+
+#29a. All repeating character in a string - print out a list/tuple etc
+
+#30. Add the first element with last element of two distinct list
 listOne = [1, 2, 3, 4, 5]
 listTwo = [6, 7, 8, 9, 10]
 newList = []
@@ -552,7 +573,7 @@ for i in range(len(listOne)):
 
 print(newList)
 
-#28. Factorial using recursion
+#31. Factorial using recursion
 num = int(input("Enter a number: "))
 
 def factorial(num):
@@ -565,17 +586,21 @@ def factorial(num):
 
 print(factorial(num))
 
-#30. Remove duplicate words and return a string
+#32. Remove duplicate words and return a string
 string = input("Enter the words of string seperated by comma: ")
 print(string)
 newString = set(string.split())
 print(newString)
 
-#30a. Remove duplicate words and return a list
+#32a. Remove duplicate words and return a list
 string = input("Enter the words of string seperated by comma: ")
 print(string)
 newString = set(string.split())
 print(list(newString))
+
+#33. Check for special characters using regex
+
+#34. Check for URLs in strings using regex
 
 # Leetcode: Easy
 # --------------
