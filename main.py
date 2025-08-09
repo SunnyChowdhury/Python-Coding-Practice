@@ -49,25 +49,26 @@ Basic programming
 #32a. Remove duplicate words and return a list ✅
 #33. Check for special characters using regex
 #34. Check for URLs in strings using regex
+#35. Find the second smallest element in a descending order list ✅
 =================================================================
-#35. LRU Cache Implementation
+#36. LRU Cache Implementation
      collections.OrderedDict or Custom LinkedList + HashMap approach.
-#36. Multithreading in Python (threading module)
+#37. Multithreading in Python (threading module)
      Write a program that starts multiple threads to compute parts of a task.
-#37. Producer-Consumer Problem using Queues
-#38. Decorator Functions
+#38. Producer-Consumer Problem using Queues
+#39. Decorator Functions
      Implement a timing/decorator to log function performance.
-#39. Using functools.reduce() and map() on a real problem
-#40. Recursive Backtracking
+#40. Using functools.reduce() and map() on a real problem
+#41. Recursive Backtracking
      E.g. generating permutations, solving N-Queens.
-#41. Custom Exception Handling
+#42. Custom Exception Handling
      Define custom errors for test validations.
-#42. Use unittest or pytest
+#43. Use unittest or pytest
      Write end-to-end test for a Python module with mocking.
-#43. Parsing JSON / XML / API response
+#44. Parsing JSON / XML / API response
      Useful for SDET testing pipelines.
-#44. Writing Parameterized Tests with Pytest
-#45. Database interaction using sqlite3
+#45. Writing Parameterized Tests with Pytest
+#46. Database interaction using sqlite3
 
 Leetcode: Arrays & Hashing : Easy
 --------------------------------
@@ -671,6 +672,14 @@ print(list(newString))
 #33. Check for special characters using regex
 
 #34. Check for URLs in strings using regex
+
+#35. Find the second smallest element in a descending order list - sort(reverse=True)
+list = [70, 11, 20, 4, 100]
+print(list)
+list.sort(reverse=True)
+print(list)
+print('The second largest element is ', list[1])
+print('The second smalled element is ', list[-2])
 
 #Leetcode: Arrays & Hashing : Easy
 #---------------------------------
