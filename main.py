@@ -31,9 +31,9 @@ Basic programming
 #18. Count occurrences of an element(number) in a list ✅
 #19. Multiply elements of a list ✅
 #20. 2nd largest/smallest element - sort() is first ✅
-#21. Check palindrome (word/string)
+#21. Check palindrome (word/string) ✅
 #22. Reverse words in a string ✅
-#23. Substring search (and frequency)
+#23. Substring search (and frequency) ✅
 #24. String length
 #25. Sum of all odd/even numbers
 #26. First repeating character in a string - break as soon as the first character is found ✅
@@ -49,7 +49,8 @@ Basic programming
 #32a. Remove duplicate words and return a list ✅
 #33. Check for special characters using regex
 #34. Check for URLs in strings using regex
-#35. Find the second smallest element in a descending order list ✅
+#35. Find the second largest/smallest element in a descending order list ✅
+#36. Find the number of repeating substring ✅
 =================================================================
 #36. LRU Cache Implementation
      collections.OrderedDict or Custom LinkedList + HashMap approach.
@@ -594,6 +595,12 @@ reverse_word = " ".join(newString[::-1])
 print("The reverses string is: ", reverse_word)
 
 #23. Substring search (and frequency)
+string = 'welcome to python programming'
+subString = 'python'
+if subString in string:
+    print('Substring is present')
+else:
+    print('Substring is not present')
 
 #24. String length
 
@@ -673,13 +680,25 @@ print(list(newString))
 
 #34. Check for URLs in strings using regex
 
-#35. Find the second smallest element in a descending order list - sort(reverse=True)
+#35. Find the second largest/smallest element in a descending order list - sort(reverse=True)
 list = [70, 11, 20, 4, 100]
 print(list)
 list.sort(reverse=True)
 print(list)
 print('The second largest element is ', list[1])
 print('The second smalled element is ', list[-2])
+
+#36. Find the number of repeating substring
+string = 'welcome to python programming python'
+newString = string.split()
+subString = 'python'
+count = 0
+
+for i in newString:
+    if i == subString:
+        count += 1
+
+print(f'The substring {subString} is present {count} times')
 
 #Leetcode: Arrays & Hashing : Easy
 #---------------------------------
