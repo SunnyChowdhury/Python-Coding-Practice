@@ -27,7 +27,7 @@ Basic programming
 #15. Clear a list ✅
 #16. Reverse a list - Using slicing ✅
 #16a. Reverse a list - Using reverse() method ✅
-#17. Clone/copy a list (5 approaches)
+#17. Clone/copy a list (5 approaches) ✅
 #18. Count occurrences of an element
 #19. Multiply elements of a list
 #20. 2nd largest/smallest element
@@ -497,7 +497,42 @@ print('Before reversing', myList)
 myList.reverse()
 print('After reversing', myList)
 
-#17. Clone/copy a list (5 approaches)
+#17. Clone/copy a list (5 approaches) - Using slicing [:] or [start:end:step]
+myList = [4, 8, 2, 10, 15, 18]
+print(myList)
+
+#newList = myList[0:len(myList)] 
+newList = myList[:]
+print(newList)
+
+#17a. Clone/copy a list (5 approaches) - Using copy()
+myList = [4, 8, 2, 10, 15, 18]
+print(myList)
+
+newList = myList.copy()
+print(newList)
+
+#17b. Clone/copy a list (5 approaches) - Using list()
+myList = [4, 8, 2, 10, 15, 18]
+print(myList)
+
+newList = list(myList)
+print(newList)
+
+#17c. Clone/copy a list (5 approaches) - Using extend(), newList.extend(oldList)
+myList = [4, 8, 2, 10, 15, 18]
+print(myList)
+
+newList = []
+newList.extend(myList)
+print(newList)
+
+#17d. Clone/copy a list (5 approaches) - Using list comprehension
+myList = [4, 8, 2, 10, 15, 18]
+print(myList)
+
+newList = [x for x in myList]
+print(newList)
 
 #18. Count occurrences of an element
 
