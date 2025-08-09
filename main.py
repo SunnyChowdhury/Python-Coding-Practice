@@ -68,7 +68,7 @@ Basic programming
 #44. Writing Parameterized Tests with Pytest
 #45. Database interaction using sqlite3
 
-Leetcode: Array & Hashing : Easy
+Leetcode: Arrays & Hashing : Easy
 --------------------------------
 1929. Concatenation of Array ✅
 217. Contains Duplicate ✅
@@ -77,14 +77,14 @@ Leetcode: Array & Hashing : Easy
 14. Longest Common Prefix ✅
 27. Remove Element ✅
 
-Leetcode: Array & Hashing : Medium
+Leetcode: Arrays & Hashing : Medium
 ----------------------------------
 242. Group Anagrams ✅
 128. Longest Consecutive Sequence ✅
 
 Leetcode: Two Pointers : Easy
 -----------------------------
-125. Valid Anagram  ✅
+125. Valid Palindrome  ✅
 680. Valid Palindrome II ✅
 
 Leetcode: Sliding Window : Medium
@@ -602,8 +602,8 @@ print(list(newString))
 
 #34. Check for URLs in strings using regex
 
-# Leetcode: Arrays & Hashing: Easy
-# --------------------------------
+#Leetcode: Arrays & Hashing: Easy
+#--------------------------------
 #1929. Concatenation of Array - Nested for loop with append()
 nums = [1,3,2,1]
 ans = []
@@ -720,70 +720,8 @@ def removeElement(nums, val):
 
 print(removeElement(nums, val))
 
-# Leetcode: Arrays & Hashing: Medium
-# ----------------------------------
-#48. Valid Palindrome - Two pointers with alphanum validation
-s = "A man, a plan, a canal: Panama"
-
-def alphaNum(s):
-    return (ord('A') <= ord(s) <= ord('Z') or ord('a') <= ord(s) <= ord('z') or (ord('0') <= ord(s) <= ord('9')))
-
-def isPalindrome(s):
-    left, right = 0, len(s) - 1 
-    while left < right:
-        # Move left pointer until an alphanumeric character is found
-        # not alphaNumber function skip over any non alphanumeric character
-        while left < right and not alphaNum(s[left]):
-            left += 1
-        # Move right pointer until an alphanumeric character is found
-        while right > left and not alphaNum(s[right]):
-            right -= 1
-        # Check if characters are not equal (ignoring case)
-        if s[left].lower() != s[right].lower():
-            return False
-        # Move both pointers towards the center
-        left += 1
-        right -= 1
-
-    return True
-
-print(isPalindrome(s))
-
-#48a. Leetcode: Valid Palindrome (Two pointers with alphanum validation)
-s = "A man, a plan, a canal: Panama"
-def validPalindrome(s):
-    newStr = ""
-    for c in s:
-        if c.isalnum():
-            newStr += c.lower()
-    return newStr == newStr[::-1]
-
-print(validPalindrome(s))
-
-#680. Valid Palindrome II
-s = "racecarx"
-
-def validPalindromeHelper(s, left, right):
-    while left < right: 
-        if s[left] != s[right]:
-            return False
-        left += 1
-        right -= 1
-    return True
-
-def validPalindromeTwo(s):
-    left = 0
-    right = len(s) - 1
-    while left < right:
-        return validPalindromeHelper(s, left + 1, right) or validPalindromeHelper(s, left, right - 1)
-        left += 1
-        right -= 1
-    return True
-
-print(validPalindromeTwo(s))
-
-# Leetcode: Array & Hashing : Medium
-# ----------------------------------
+#Leetcode: Array & Hashing : Medium
+#----------------------------------
 #242. Group Anagrams - Use dict, ord(), array of 26 characters
 from collections import defaultdict
 
@@ -816,6 +754,70 @@ def longestConsecutiveSequence(nums):
     return longest
 
 print(longestConsecutiveSequence(nums))
+
+#Leetcode: Two Pointers : Easy
+#----------------------------------
+#48. Valid Palindrome - Two pointers with alphanum validation
+s = "A man, a plan, a canal: Panama"
+
+def alphaNum(s):
+    return (ord('A') <= ord(s) <= ord('Z') or ord('a') <= ord(s) <= ord('z') or (ord('0') <= ord(s) <= ord('9')))
+
+def isPalindrome(s):
+    left, right = 0, len(s) - 1 
+    while left < right:
+        # Move left pointer until an alphanumeric character is found
+        # not alphaNumber function skip over any non alphanumeric character
+        while left < right and not alphaNum(s[left]):
+            left += 1
+        # Move right pointer until an alphanumeric character is found
+        while right > left and not alphaNum(s[right]):
+            right -= 1
+        # Check if characters are not equal (ignoring case)
+        if s[left].lower() != s[right].lower():
+            return False
+        # Move both pointers towards the center
+        left += 1
+        right -= 1
+
+    return True
+
+print(isPalindrome(s))
+
+#680. Valid Palindrome II
+s = "racecarx"
+
+def validPalindromeHelper(s, left, right):
+    while left < right: 
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+def validPalindromeTwo(s):
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        return validPalindromeHelper(s, left + 1, right) or validPalindromeHelper(s, left, right - 1)
+        left += 1
+        right -= 1
+    return True
+
+print(validPalindromeTwo(s))
+
+#Leetcode: Two Pointers : Easy
+#-----------------------------
+#125. Valid Anagram - Two pointers with alphanum validation
+s = "A man, a plan, a canal: Panama"
+def validPalindrome(s):
+    newStr = ""
+    for c in s:
+        if c.isalnum():
+            newStr += c.lower()
+    return newStr == newStr[::-1]
+
+print(validPalindrome(s))
 
 #Leetcode: Sliding Window : Medium
 #----------------------------------
