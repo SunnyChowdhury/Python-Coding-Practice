@@ -30,7 +30,7 @@ Basic programming
 #17. Clone/copy a list (5 approaches) ✅
 #18. Count occurrences of an element(number) in a list ✅
 #19. Multiply elements of a list ✅
-#20. 2nd largest/smallest element
+#20. 2nd largest/smallest element - sort() is first ✅
 #21. Check palindrome (word/string)
 #22. Reverse words in a string ✅
 #23. Substring search (and frequency)
@@ -569,7 +569,10 @@ for i in range(len(myList)):
 
 print(count)
 
-#20. 2nd largest/smallest element
+#20. 2nd largest/smallest element - sort() is first
+myList = [70, 11, 20, 4, 100]
+myList.sort()
+print(myList[-2])
 
 #21. Check palindrome (word/string)
 s = "madam madam"
