@@ -28,7 +28,7 @@ Basic programming
 #16. Reverse a list - Using slicing ✅
 #16a. Reverse a list - Using reverse() method ✅
 #17. Clone/copy a list (5 approaches) ✅
-#18. Count occurrences of an element
+#18. Count occurrences of an element(number) in a list ✅
 #19. Multiply elements of a list
 #20. 2nd largest/smallest element
 #21. Check palindrome (word/string)
@@ -534,7 +534,16 @@ print(myList)
 newList = [x for x in myList]
 print(newList)
 
-#18. Count occurrences of an element
+#18. Count occurrences of an element(number) in a list
+myList = [15, 6, 7, 10, 12, 20, 10, 28, 10]
+count = 0
+element = int(input("Which number are you looking to find? "))
+
+for i in myList:
+    if i == element:
+        count += 1
+
+print(f'The number {element} occurs {count} number of times')
 
 #19. Multiply elements of a list
 
