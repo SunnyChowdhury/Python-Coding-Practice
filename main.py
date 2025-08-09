@@ -29,7 +29,7 @@ Basic programming
 #16a. Reverse a list - Using reverse() method ✅
 #17. Clone/copy a list (5 approaches) ✅
 #18. Count occurrences of an element(number) in a list ✅
-#19. Multiply elements of a list
+#19. Multiply elements of a list ✅
 #20. 2nd largest/smallest element
 #21. Check palindrome (word/string)
 #22. Reverse words in a string ✅
@@ -545,7 +545,29 @@ for i in myList:
 
 print(f'The number {element} occurs {count} number of times')
 
-#19. Multiply elements of a list
+#19. Multiply elements of a list - Using numpy library and prod method
+import numpy
+myList = [3, 2, 4, 8]
+result = numpy.prod(myList)
+print(result)
+
+#19a. Multiply elements of a list - Using for loop and without range function
+myList = [3, 2, 4, 8]
+count = 1
+
+for i in myList:
+    count = count * i
+
+print(count)
+
+#19b. Multiply elements of a list - Using for loop and with range function
+myList = [3, 2, 4, 8]
+count = 1
+
+for i in range(len(myList)):
+    count = count * myList[i]
+
+print(count)
 
 #20. 2nd largest/smallest element
 
