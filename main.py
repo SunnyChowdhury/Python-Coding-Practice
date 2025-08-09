@@ -602,8 +602,8 @@ print(list(newString))
 
 #34. Check for URLs in strings using regex
 
-#Leetcode: Arrays & Hashing: Easy
-#--------------------------------
+#Leetcode: Arrays & Hashing : Easy
+#---------------------------------
 #1929. Concatenation of Array - Nested for loop with append()
 nums = [1,3,2,1]
 ans = []
@@ -720,8 +720,8 @@ def removeElement(nums, val):
 
 print(removeElement(nums, val))
 
-#Leetcode: Array & Hashing : Medium
-#----------------------------------
+#Leetcode: Arrays & Hashing : Medium
+#---------------------------------
 #242. Group Anagrams - Use dict, ord(), array of 26 characters
 from collections import defaultdict
 
@@ -756,8 +756,8 @@ def longestConsecutiveSequence(nums):
 print(longestConsecutiveSequence(nums))
 
 #Leetcode: Two Pointers : Easy
-#----------------------------------
-#48. Valid Palindrome - Two pointers with alphanum validation
+#-----------------------------
+#125. Valid Palindrome - Two pointers with alphanum validation
 s = "A man, a plan, a canal: Panama"
 
 def alphaNum(s):
@@ -784,6 +784,17 @@ def isPalindrome(s):
 
 print(isPalindrome(s))
 
+#125a. Valid Palindrome - Two pointers with alphanum validation
+s = "A man, a plan, a canal: Panama"
+def validPalindrome(s):
+    newStr = ""
+    for c in s:
+        if c.isalnum():
+            newStr += c.lower()
+    return newStr == newStr[::-1]
+
+print(validPalindrome(s))
+
 #680. Valid Palindrome II
 s = "racecarx"
 
@@ -805,19 +816,6 @@ def validPalindromeTwo(s):
     return True
 
 print(validPalindromeTwo(s))
-
-#Leetcode: Two Pointers : Easy
-#-----------------------------
-#125. Valid Anagram - Two pointers with alphanum validation
-s = "A man, a plan, a canal: Panama"
-def validPalindrome(s):
-    newStr = ""
-    for c in s:
-        if c.isalnum():
-            newStr += c.lower()
-    return newStr == newStr[::-1]
-
-print(validPalindrome(s))
 
 #Leetcode: Sliding Window : Medium
 #----------------------------------
