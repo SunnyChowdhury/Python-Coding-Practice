@@ -39,8 +39,8 @@ Basic programming
 #26. First repeating character in a string - break as soon as the first character is found ✅
 #26a. All repeating character in a string - print out a list/tuple etc ✅
 #26. First/all repeating character in a string ✅
-#27. FizzBuzz
-#28. Reverse a number4
+#27. FizzBuzz ✅
+#28. Reverse a number
 #29. First repeating character in a string - break as soon as the first character is found
 #29a. All repeating character in a string - print out a list/tuple etc
 #30. Add the first element with last element of two distinct list ✅
@@ -653,7 +653,18 @@ if len(repeatedCharacter) > 0:
 else:
     print('There is no repeacting character')
 
-#27. FizzBuzz
+#27. FizzBuzz -> Print Fizz if it’s divisible by 3, print Buzz if it’s divisible by 5, print FizzBuzz if it’s divisible by both 3 and 5:
+num = int(input("Enter a number: "))
+
+for i in range(1, num+1):
+    if i % 3 == 0 and i % 5 == 0:
+        print("FizzBuzz")
+    elif i % 3 == 0: 
+        print("Fizz")
+    elif i % 5 == 0:
+        print("Buzz")
+    else:
+        print(i)
 
 #28. Reverse a number
 
