@@ -34,13 +34,13 @@ Basic programming
 #21. Check palindrome (word/string) ✅
 #22. Reverse words in a string ✅
 #23. Substring search (and frequency) ✅
-#24. String length
+#24. Find the length of String ✅
 #25. Sum of all odd/even numbers
 #26. First repeating character in a string - break as soon as the first character is found ✅
 #26a. All repeating character in a string - print out a list/tuple etc ✅
 #26. First/all repeating character in a string ✅
 #27. FizzBuzz
-#28. Reverse a number
+#28. Reverse a number4
 #29. First repeating character in a string - break as soon as the first character is found
 #29a. All repeating character in a string - print out a list/tuple etc
 #30. Add the first element with last element of two distinct list ✅
@@ -602,7 +602,18 @@ if subString in string:
 else:
     print('Substring is not present')
 
-#24. String length
+#24. Find the length of String - Use len() method
+string = "Welcome"
+print(len(string))
+
+#24a. Find the length of String - Use for loop
+string = "Welcome"
+count = 0
+
+for i in string:
+    count += 1
+
+print(count)
 
 #25. Sum of all odd/even numbers
 
@@ -641,7 +652,7 @@ else:
 
 #29a. All repeating character in a string - print out a list/tuple etc
 
-#30. Add the first element with last element of two distinct list
+#30. Add the first element with last element of two distinct list - list1[i] + list2[len(list2)-i-1]
 listOne = [1, 2, 3, 4, 5]
 listTwo = [6, 7, 8, 9, 10]
 newList = []
