@@ -38,18 +38,17 @@ Basic programming
 #25. Sum of all Odd numbers ✅
 #26. First repeating character in a string - break as soon as the first character is found ✅
 #26a. All repeating character in a string - print out a list/tuple etc ✅
-#27. First/all repeating character in a string ✅
-#28. FizzBuzz ✅
-#29. Reverse a number ✅
-#30. Add the first element with last element of two distinct list ✅
-#31. Factorial using recursion ✅
-#32. Remove duplicate words and return a string ✅
-#32a. Remove duplicate words and return a list ✅
-#33. Check for special characters using regex
-#34. Check for URLs in strings using regex
-#35. Find the second largest/smallest element in a descending order list ✅
-#36. Find the number of repeating substring ✅
-#37. Sum of all Even numbers ✅
+#27. FizzBuzz ✅
+#28. Reverse a number ✅
+#29. Add the first element with last element of two distinct list ✅
+#30. Factorial using recursion ✅
+#31. Remove duplicate words and return a string ✅
+#31a. Remove duplicate words and return a list ✅
+#32. Check for special characters using regex
+#33. Check for URLs in strings using regex
+#34. Find the second largest/smallest element in a descending order list ✅
+#35. Find the number of repeating substring ✅
+#36. Sum of all Even numbers ✅
 =================================================================
 #38. LRU Cache Implementation
      collections.OrderedDict or Custom LinkedList + HashMap approach.
@@ -226,7 +225,6 @@ num1, num2 = num2, num1
 print('After swapping')
 print('First number: ', num1)
 print('Second number: ', num2)
-
 
 #1a. Swap two numbers - Using a third variable
 num1 = int(input('Enter the first number: '))
