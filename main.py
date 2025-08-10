@@ -95,6 +95,10 @@ Leetcode: Two Pointers : Easy
 125. Valid Palindrome  ✅
 680. Valid Palindrome II ✅
 
+Leetcode: Sliding Window : Easy
+-------------------------------
+19. Contains Duplicate II ✅
+
 Leetcode: Sliding Window : Medium
 ----------------------------------
 3. Longest Substring Without Repeating Characters ✅
@@ -750,8 +754,8 @@ for i in range(1, num+1):
 
 print(total)
 
-#Leetcode: Arrays & Hashing : Easy
-#---------------------------------
+# Leetcode: Arrays & Hashing : Easy
+# ---------------------------------
 #1929. Concatenation of Array - Nested for loop with append()
 nums = [1,3,2,1]
 ans = []
@@ -868,8 +872,8 @@ def removeElement(nums, val):
 
 print(removeElement(nums, val))
 
-#Leetcode: Arrays & Hashing : Medium
-#---------------------------------
+# Leetcode: Arrays & Hashing : Medium
+# ---------------------------------
 #242. Group Anagrams - Use dict, ord(), array of 26 characters
 from collections import defaultdict
 
@@ -903,8 +907,8 @@ def longestConsecutiveSequence(nums):
 
 print(longestConsecutiveSequence(nums))
 
-#Leetcode: Two Pointers : Easy
-#-----------------------------
+# Leetcode: Two Pointers : Easy
+# -----------------------------
 #125. Valid Palindrome - Two pointers with alphanum validation
 s = "A man, a plan, a canal: Panama"
 
@@ -965,8 +969,30 @@ def validPalindromeTwo(s):
 
 print(validPalindromeTwo(s))
 
-#Leetcode: Sliding Window : Medium
-#----------------------------------
+# Leetcode: Sliding Window : Easy
+# -------------------------------
+#19. Contains Duplicate II
+nums = [1,2,3,1]
+k = 3
+
+def containsDuplicateTwo(nums, k):
+    window = set()
+    l = 0
+
+    for r in range(len(nums)):
+        if r - l > k:
+            window.remove(nums[l])
+            l += 1
+        if nums[r] in window:
+            return True
+        window.add(nums[r])
+
+    return False
+
+print(containsDuplicateTwo(nums, k))
+
+# Leetcode: Sliding Window : Medium
+# ----------------------------------
 #3. Longest Substring Without Repeating Characters
 s = "abcabcbb"
 
