@@ -997,15 +997,15 @@ print(containsDuplicateTwo(nums, k))
 s = "abcabcbb"
 
 def longestSubstingWithoutReapeatingCharacters(s):
-    charSet = set()
+    window = set()
     l = 0
     res = 0
 
     for r in range(len(s)):
-        while s[r] in charSet:
-            charSet.remove(s[l])
+        while s[r] in window:
+            window.remove(s[l])
             l += 1
-        charSet.add(s[r])
+        window.add(s[r])
         res = max(res, r - l + 1)
 
     return res
