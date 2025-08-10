@@ -35,7 +35,7 @@ Basic programming
 #22. Reverse words in a string ✅
 #23. Substring search (and frequency) ✅
 #24. Find the length of String ✅
-#25. Sum of all odd/even numbers
+#25. Sum of all Odd numbers ✅
 #26. First repeating character in a string - break as soon as the first character is found ✅
 #26a. All repeating character in a string - print out a list/tuple etc ✅
 #26. First/all repeating character in a string ✅
@@ -51,6 +51,7 @@ Basic programming
 #34. Check for URLs in strings using regex
 #35. Find the second largest/smallest element in a descending order list ✅
 #36. Find the number of repeating substring ✅
+#37a. Sum of all Even numbers ✅
 =================================================================
 #36. LRU Cache Implementation
      collections.OrderedDict or Custom LinkedList + HashMap approach.
@@ -615,7 +616,15 @@ for i in string:
 
 print(count)
 
-#25. Sum of all odd/even numbers
+#25. Sum of all Odd numbers
+num = int(input("Enter the last number: "))
+total = 0
+
+for i in range(1, num+1):
+    if i % 2 != 0:
+        total = total + i
+
+print(total)
 
 #26. First repeating character in a string - break as soon as the first character is found
 s = "aabcde"
@@ -710,6 +719,16 @@ for i in newString:
         count += 1
 
 print(f'The substring {subString} is present {count} times')
+
+#37. Sum of all Even numbers
+num = int(input("Enter the last number: "))
+total = 0
+
+for i in range(1, num+1):
+    if i % 2 == 0:
+        total = total + i
+
+print(total)
 
 #Leetcode: Arrays & Hashing : Easy
 #---------------------------------
