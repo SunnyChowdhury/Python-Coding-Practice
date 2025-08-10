@@ -40,9 +40,7 @@ Basic programming
 #26a. All repeating character in a string - print out a list/tuple etc ✅
 #26. First/all repeating character in a string ✅
 #27. FizzBuzz ✅
-#28. Reverse a number
-#29. First repeating character in a string - break as soon as the first character is found
-#29a. All repeating character in a string - print out a list/tuple etc
+#28. Reverse a number ✅
 #30. Add the first element with last element of two distinct list ✅
 #31. Factorial using recursion ✅
 #32. Remove duplicate words and return a string ✅
@@ -641,17 +639,18 @@ else:
     print('There is no repeacting character')
 
 #26a. All repeating character in a string - print out a list/tuple etc
-s = "aabbcde"
+str = input("Enter your string: ")
 repeatedCharacter = set()
 
-for c in s:
-    if s.count(c) > 1:
-        repeatedCharacter.add(c)
+for ch in str:
+    if (str.count(ch) > 1):
+        repeatedCharacter.add(ch)
 
 if len(repeatedCharacter) > 0:
-    print('The first repeated character is', list(repeatedCharacter))
+    print("The repeated characters are: ", repeatedCharacter)
+    print("The first repeated character is: ", list(repeatedCharacter))
 else:
-    print('There is no repeacting character')
+    print("There is no repeated character")
 
 #27. FizzBuzz -> Print Fizz if it’s divisible by 3, print Buzz if it’s divisible by 5, print FizzBuzz if it’s divisible by both 3 and 5:
 num = int(input("Enter a number: "))
@@ -666,7 +665,16 @@ for i in range(1, num+1):
     else:
         print(i)
 
-#28. Reverse a number
+#28. Reverse a number - Using while loop
+num = int(input("Enter a number: "))
+reverse_number = 0
+
+while num > 0:
+    remainder = num % 10
+    reverse_number = (reverse_number * 10) + remainder
+    num = num // 10
+
+print(reverse_number)
 
 #29. First repeating character in a string - break as soon as the first character is found
 
