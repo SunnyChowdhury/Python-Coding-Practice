@@ -38,9 +38,9 @@ Basic programming
 #25. Sum of all Odd numbers ✅
 #26. First repeating character in a string - break as soon as the first character is found ✅
 #26a. All repeating character in a string - print out a list/tuple etc ✅
-#26. First/all repeating character in a string ✅
-#27. FizzBuzz ✅
-#28. Reverse a number ✅
+#27. First/all repeating character in a string ✅
+#28. FizzBuzz ✅
+#29. Reverse a number ✅
 #30. Add the first element with last element of two distinct list ✅
 #31. Factorial using recursion ✅
 #32. Remove duplicate words and return a string ✅
@@ -49,26 +49,26 @@ Basic programming
 #34. Check for URLs in strings using regex
 #35. Find the second largest/smallest element in a descending order list ✅
 #36. Find the number of repeating substring ✅
-#37a. Sum of all Even numbers ✅
+#37. Sum of all Even numbers ✅
 =================================================================
-#36. LRU Cache Implementation
+#38. LRU Cache Implementation
      collections.OrderedDict or Custom LinkedList + HashMap approach.
-#37. Multithreading in Python (threading module)
+#39. Multithreading in Python (threading module)
      Write a program that starts multiple threads to compute parts of a task.
-#38. Producer-Consumer Problem using Queues
-#39. Decorator Functions
+#40. Producer-Consumer Problem using Queues
+#41. Decorator Functions
      Implement a timing/decorator to log function performance.
-#40. Using functools.reduce() and map() on a real problem
-#41. Recursive Backtracking
+#42. Using functools.reduce() and map() on a real problem
+#43. Recursive Backtracking
      E.g. generating permutations, solving N-Queens.
-#42. Custom Exception Handling
+#44. Custom Exception Handling
      Define custom errors for test validations.
-#43. Use unittest or pytest
+#45. Use unittest or pytest
      Write end-to-end test for a Python module with mocking.
-#44. Parsing JSON / XML / API response
+#46. Parsing JSON / XML / API response
      Useful for SDET testing pipelines.
-#45. Writing Parameterized Tests with Pytest
-#46. Database interaction using sqlite3
+#47. Writing Parameterized Tests with Pytest
+#48. Database interaction using sqlite3
 
 Leetcode: Arrays & Hashing : Easy
 --------------------------------
@@ -676,11 +676,7 @@ while num > 0:
 
 print(reverse_number)
 
-#29. First repeating character in a string - break as soon as the first character is found
-
-#29a. All repeating character in a string - print out a list/tuple etc
-
-#30. Add the first element with last element of two distinct list - list1[i] + list2[len(list2)-i-1]
+#29. Add the first element with last element of two distinct list - list1[i] + list2[len(list2)-i-1]
 listOne = [1, 2, 3, 4, 5]
 listTwo = [6, 7, 8, 9, 10]
 newList = []
@@ -690,7 +686,7 @@ for i in range(len(listOne)):
 
 print(newList)
 
-#31. Factorial using recursion
+#30. Factorial using recursion
 num = int(input("Enter a number: "))
 
 def factorial(num):
@@ -703,23 +699,23 @@ def factorial(num):
 
 print(factorial(num))
 
-#32. Remove duplicate words and return a string
+#31. Remove duplicate words and return a string
 string = input("Enter the words of string seperated by comma: ")
 print(string)
 newString = set(string.split())
 print(newString)
 
-#32a. Remove duplicate words and return a list
+#31a. Remove duplicate words and return a list
 string = input("Enter the words of string seperated by comma: ")
 print(string)
 newString = set(string.split())
 print(list(newString))
 
-#33. Check for special characters using regex
+#32. Check for special characters using regex
 
-#34. Check for URLs in strings using regex
+#33. Check for URLs in strings using regex
 
-#35. Find the second largest/smallest element in a descending order list - sort(reverse=True)
+#34. Find the second largest/smallest element in a descending order list - sort(reverse=True)
 list = [70, 11, 20, 4, 100]
 print(list)
 list.sort(reverse=True)
@@ -727,7 +723,7 @@ print(list)
 print('The second largest element is ', list[1])
 print('The second smalled element is ', list[-2])
 
-#36. Find the number of repeating substring
+#35. Find the number of repeating substring
 string = 'welcome to python programming python'
 newString = string.split()
 subString = 'python'
@@ -739,7 +735,7 @@ for i in newString:
 
 print(f'The substring {subString} is present {count} times')
 
-#37. Sum of all Even numbers
+#36. Sum of all Even numbers
 num = int(input("Enter the last number: "))
 total = 0
 
