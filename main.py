@@ -27,26 +27,33 @@ Basic programming
 #15. Clear a list ✅
 #16. Reverse a list - Using slicing ✅
 #16a. Reverse a list - Using reverse() method ✅
-#17. Clone/copy a list (5 approaches) ✅
+#17. Clone/copy a list (5 approaches) - Using slicing [:] or [start:end:step] ✅
+#17a. Clone/copy a list (5 approaches) - Using copy() ✅
+#17b. Clone/copy a list (5 approaches) - Using list() ✅
+#17c. Clone/copy a list (5 approaches) - Using extend(), newList.extend(oldList) ✅
+#17d. Clone/copy a list (5 approaches) - Using list comprehension ✅
 #18. Count occurrences of an element(number) in a list ✅
-#19. Multiply elements of a list ✅
+#19. Multiply elements of a list - Using numpy library and prod method ✅
+#19a. Multiply elements of a list - Using for loop and without range function ✅
+#19b. Multiply elements of a list - Using for loop and with range function ✅
 #20. 2nd largest/smallest element - sort() is first ✅
 #21. Check palindrome (word/string) ✅
 #22. Reverse words in a string ✅
 #23. Substring search (and frequency) ✅
-#24. Find the length of String ✅
+#24. Find the length of String - Use len() method ✅
+#24a. Find the length of String - Use for loop ✅
 #25. Sum of all Odd numbers ✅
 #26. First repeating character in a string - break as soon as the first character is found ✅
 #26a. All repeating character in a string - print out a list/tuple etc ✅
-#27. FizzBuzz ✅
-#28. Reverse a number ✅
-#29. Add the first element with last element of two distinct list ✅
+#27. FizzBuzz - Print Fizz if it's divisible by 3, print Buzz if it's divisible by 5, print FizzBuzz if it's divisible by both 3 and 5 ✅
+#28. Reverse a number - Using while loop ✅
+#29. Add the first element with last element of two distinct list - list1[i] + list2[len(list2)-i-1] ✅
 #30. Factorial using recursion ✅
 #31. Remove duplicate words and return a string ✅
 #31a. Remove duplicate words and return a list ✅
 #32. Check for special characters using regex
 #33. Check for URLs in strings using regex
-#34. Find the second largest/smallest element in a descending order list ✅
+#34. Find the second largest/smallest element in a descending order list - sort(reverse=True) ✅
 #35. Find the number of repeating substring ✅
 #36. Sum of all Even numbers ✅
 =================================================================
@@ -650,7 +657,7 @@ if len(repeatedCharacter) > 0:
 else:
     print("There is no repeated character")
 
-#27. FizzBuzz -> Print Fizz if it’s divisible by 3, print Buzz if it’s divisible by 5, print FizzBuzz if it’s divisible by both 3 and 5:
+#27. FizzBuzz - Print Fizz if it's divisible by 3, print Buzz if it's divisible by 5, print FizzBuzz if it's divisible by both 3 and 5
 num = int(input("Enter a number: "))
 
 for i in range(1, num+1):
