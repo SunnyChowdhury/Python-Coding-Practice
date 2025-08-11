@@ -97,7 +97,7 @@ Leetcode: Two Pointers : Easy
 
 Leetcode: Sliding Window : Easy
 -------------------------------
-19. Contains Duplicate II ✅
+219. Contains Duplicate II ✅
 
 Leetcode: Sliding Window : Medium
 ----------------------------------
@@ -971,7 +971,7 @@ print(validPalindromeTwo(s))
 
 # Leetcode: Sliding Window : Easy
 # -------------------------------
-#19. Contains Duplicate II
+#219. Contains Duplicate II
 nums = [1,2,3,1]
 k = 3
 
