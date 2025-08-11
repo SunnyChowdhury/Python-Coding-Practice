@@ -87,7 +87,7 @@ Leetcode: Arrays & Hashing : Easy
 
 Leetcode: Arrays & Hashing : Medium
 ----------------------------------
-242. Group Anagrams ✅
+49. Group Anagrams ✅
 128. Longest Consecutive Sequence ✅
 
 Leetcode: Two Pointers : Easy
@@ -874,7 +874,7 @@ print(removeElement(nums, val))
 
 # Leetcode: Arrays & Hashing : Medium
 # ---------------------------------
-#242. Group Anagrams - Use dict, ord(), array of 26 characters
+#49. Group Anagrams - Use dict, ord(), array of 26 characters
 from collections import defaultdict
 
 strs = ["eat","tea","tan","ate","nat","bat"]
