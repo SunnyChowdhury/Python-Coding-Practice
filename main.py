@@ -89,6 +89,7 @@ Leetcode: Arrays & Hashing : Medium
 ----------------------------------
 49. Group Anagrams ✅
 128. Longest Consecutive Sequence ✅
+122. Best Time to Buy and Sell Stock II ✅
 
 Leetcode: Two Pointers : Easy
 -----------------------------
@@ -98,7 +99,7 @@ Leetcode: Two Pointers : Easy
 Leetcode: Sliding Window : Easy
 -------------------------------
 219. Contains Duplicate II ✅
-121. Best Time to Buy and Sell Stock
+121. Best Time to Buy and Sell Stock ✅
 
 Leetcode: Sliding Window : Medium
 ----------------------------------
@@ -907,6 +908,19 @@ def longestConsecutiveSequence(nums):
     return longest
 
 print(longestConsecutiveSequence(nums))
+
+#122. Best Time to Buy and Sell Stock II
+prices = [7,1,5,3,6,4]
+
+def bestTimeBuySellTwo(prices):
+    profit = 0
+    for i in range(1, len(prices)):
+        if prices[i] > prices[i - 1]:
+            profit += prices[i] - prices[i - 1]
+    
+    return profit
+
+print(bestTimeBuySellTwo(prices))
 
 # Leetcode: Two Pointers : Easy
 # -----------------------------
