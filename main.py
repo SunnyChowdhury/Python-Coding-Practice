@@ -98,6 +98,7 @@ Leetcode: Two Pointers : Easy
 Leetcode: Sliding Window : Easy
 -------------------------------
 219. Contains Duplicate II ✅
+121. Best Time to Buy and Sell Stock
 
 Leetcode: Sliding Window : Medium
 ----------------------------------
@@ -990,6 +991,24 @@ def containsDuplicateTwo(nums, k):
     return False
 
 print(containsDuplicateTwo(nums, k))
+
+#121. Best Time to Buy and Sell Stock
+prices = [7,1,5,3,6,4]
+
+def bestTimeBuySell(prices):
+    l, r = 0, 1
+    maxP = 0
+    while r < len(prices):
+        if prices[l] < prices[r]:
+            profit = prices[r] - prices[l]
+            maxP = max(maxP, profit)
+        else:
+            l = r
+        r += 1
+
+    return maxP
+
+print(bestTimeBuySell(prices))
 
 # Leetcode: Sliding Window : Medium
 # ----------------------------------
