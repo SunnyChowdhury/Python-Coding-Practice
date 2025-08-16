@@ -132,7 +132,7 @@ AI recommendation for SDET
 15. Valid Anagram (#242) ✅
 16. First Unique Character in a String (#387)
 17. Reverse String (#344)
-18. Valid Palindrome (#125)
+18. Valid Palindrome (#125) ✅
 19. Implement strStr() (#28)
 20. Count and Say (#38)
 
