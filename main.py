@@ -95,7 +95,7 @@ Leetcode: Two Pointers : Easy
 -----------------------------
 125. Valid Palindrome  ✅
 680. Valid Palindrome II ✅
-1768. Merge Strings Alternately
+1768. Merge Strings Alternately ✅
 
 Leetcode: Sliding Window : Easy
 -------------------------------
