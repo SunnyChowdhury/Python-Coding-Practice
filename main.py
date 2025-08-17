@@ -93,7 +93,8 @@ Leetcode: Arrays & Hashing : Medium
 
 Leetcode: Two Pointers : Easy
 -----------------------------
-125. Valid Palindrome  ✅
+344. Reverse String ✅
+125. Valid Palindrome ✅
 680. Valid Palindrome II ✅
 1768. Merge Strings Alternately ✅
 
@@ -925,6 +926,37 @@ print(bestTimeBuySellTwo(prices))
 
 # Leetcode: Two Pointers : Easy
 # -----------------------------
+#344. Reverse String - using Time: O(n) Space: O(1)
+s = ["h","e","l","l","o"]
+
+def reverseString(s):
+    l, r = 0, len(s) - 1
+    while l < r:
+        s[l], s[r] = s[r], s[l]
+        l += 1
+        r -= 1
+
+    return s
+
+print(reverseString(s))
+
+#344a. Reverse String - Using Stack Time:O(n) Space: O(n)
+s = ["h","e","l","l","o"]
+
+def reverseString(s):
+    stack = []
+    
+    for c in s:
+        stack.append(c)
+    i = 0
+    while stack:
+        s[i] = stack.pop()
+        i += 1
+    
+    return s
+
+print(reverseString(s))
+
 #125. Valid Palindrome - Two pointers with alphanum validation
 s = "A man, a plan, a canal: Panama"
 
