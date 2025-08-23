@@ -109,8 +109,112 @@ Leetcode: Sliding Window : Medium
 ----------------------------------
 3. Longest Substring Without Repeating Characters ✅
 
-Roadmap for Leetcode
--------------------------------------
+Leetcode Roadmap
+----------------
+📁 Arrays & Hashing: Easy
+-------------------------
+1. 217 - Contains Duplicate ✅
+2. 242 - Valid Anagram ✅
+3. 1 - Two Sum (Very Common) ✅
+4. 88 - Merge Sorted Array ✅
+5. 26 - Remove Duplicates from Sorted Array
+6. 283 - Move Zeroes
+7. 169 - Majority Element
+8. 448 - Find All Numbers Disappeared in an Array
+9. 349 - Intersection of Two Arrays
+10. 350 - Intersection of Two Arrays II
+11. 706 - Design HashMap (Practical for Frameworks)
+
+📁 Arrays & Hashing: Medium
+---------------------------
+12. 36 - Valid Sudoku (Excellent for Complex Validation)
+13. 347 - Top K Frequent Elements
+14. 238 - Product of Array Except Self
+15. 56 - Merge Intervals (Great for Test Coverage Analysis)
+16. 15 - 3Sum
+
+🔁 Two Pointers, Sorting & Intervals: Easy
+------------------------------------------
+32. 121 - Best Time to Buy and Sell Stock ✅
+33. 202 - Happy Number
+34. 141 - Linked List Cycle (Memory Leak Concepts)
+
+🔁 Two Pointers, Sorting & Intervals: Medium
+--------------------------------------------
+35. 11 - Container With Most Water
+36. 253 - Meeting Rooms II (Good for Scheduling Tests)
+37. 215 - Kth Largest Element in an Array
+
+🔤 Strings & Sliding Window: Easy
+--------------------------------
+17. 344 - Reverse String ✅
+18. 387 - First Unique Character in a String
+19. 125 - Valid Palindrome (Very Common) ✅
+20. 20 - Valid Parentheses (Very Common)
+21. 58 - Length of Last Word
+22. 409 - Longest Palindrome
+23. 929 - Unique Email Addresses (Great for Testing Scenarios)
+24. 290 - Word Pattern (Good for API Testing)
+25. 205 - Isomorphic Strings
+26. 383 - Ransom Note
+
+🔤 Strings & Sliding Window: Medium
+-----------------------------------
+27. 3 - Longest Substring Without Repeating Characters ✅
+28. 49 - Group Anagrams ✅
+29. 151 - Reverse Words in a String
+30. 394 - Decode String (Good for Parsing Tests)
+31. 8 - String to Integer (atoi) (Excellent for Edge Case Testing!)
+
+🗂 Stacks & Queues: Easy
+------------------------
+38. 232 - Implement Queue using Stacks
+39. 225 - Implement Stack using Queues
+40. 155 - Min Stack
+
+🗂 Stacks & Queues: Medium
+--------------------------
+41. 739 - Daily Temperatures
+
+🔁 Recursion & Backtracking (Basic): Easy
+-----------------------------------------
+42. 104 - Maximum Depth of Binary Tree
+43. 110 - Balanced Binary Tree
+44. 206 - Reverse Linked List
+45. 21 - Merge Two Sorted Lists
+
+🔁 Recursion & Backtracking (Basic): Medium
+-------------------------------------------
+46. 78 - Subsets (Combinatorial Testing Concepts)
+47. 46 - Permutations
+
+🔍 Binary Search & Matrix: Easy
+-------------------------------
+48. 278 - First Bad Version (Classic QA Problem!)
+49. 704 - Binary Search
+50. 74 - Search a 2D Matrix
+
+🔍 Binary Search & Matrix: Medium
+---------------------------------
+51. 33 - Search in Rotated Sorted Array
+52. 54 - Spiral Matrix (2D Test Data)
+53. 973 - K Closest Points to Origin
+
+🌳 Binary Tree & Graph (Optional Basics): Medium
+------------------------------------------------
+54. 102 - Binary Tree Level Order Traversal (Hierarchical Data Testing)
+55. 572 - Subtree of Another Tree
+56. 617 - Merge Two Binary Trees
+
+➕ Bit Manipulation & Math: Easy
+--------------------------------
+57. 190 - Reverse Bits
+58. 191 - Number of 1 Bits
+59. 9 - Palindrome Number
+60. 13 - Roman to Integer
+
+Longterm Roadmap for Leetcode
+--------------------
 📁 Arrays & Hashing: Easy
 -------------------------
 1. Two Sum (#1) - array + hashmap ✅
@@ -135,7 +239,7 @@ Roadmap for Leetcode
 ---------------------------------
 15. Valid Anagram (#242) ✅
 16. First Unique Character in a String (#387)
-17. Reverse String (#344)
+17. Reverse String (#344) ✅
 18. Valid Palindrome (#125) ✅
 19. Implement strStr() (#28)
 20. Count and Say (#38)
@@ -226,6 +330,8 @@ Roadmap for Leetcode
 67. Count Bits (#338)
 68. Number of 1 Bits (#191)
 69. Bits manipulation variants (e.g. #190 or #137)
+
+
 '''
 
 # Basic programming
