@@ -51,7 +51,8 @@ Basic programming
 #30. Factorial using recursion ✅
 #31. Remove duplicate words and return a string ✅
 #31a. Remove duplicate words and return a list ✅
-#32. Check for special characters using regex
+#32. Check for special characters using regex - Using re.search() ✅
+#32a. Check for special characters using regex - Using re.compile() ✅
 #33. Check for URLs in strings using regex
 #34. Find the second largest/smallest element in a descending order list - sort(reverse=True) ✅
 #35. Find the number of repeating substring ✅
@@ -725,7 +726,26 @@ print(string)
 newString = set(string.split())
 print(list(newString))
 
-#32. Check for special characters using regex
+#32. Check for special characters using regex - Using re.search()
+import re
+
+string = "welcome@@2To%%Python**Programming@!!^%%@$"
+
+if re.search(r'[^a-zA-Z0-9]', string):
+    print('Sring contains special character')
+else:
+    print('String does not contain any special character')
+
+#32a. Check for special characters using regex - Using re.compile()
+import re
+
+string = "welcome@@2To%%Python**Programming@!!^%%@$"
+regex = re.compile('[~!@#$%^&*]') 
+
+if regex.search(string):
+    print('Sring contains special character')
+else:
+    print('String does not contain any special character')
 
 #33. Check for URLs in strings using regex
 
