@@ -113,225 +113,192 @@ Leetcode Roadmap
 ----------------
 📁 Arrays & Hashing: Easy
 -------------------------
-1. 217 - Contains Duplicate ✅
-2. 242 - Valid Anagram ✅
-3. 1 - Two Sum (Very Common) ✅
-4. 88 - Merge Sorted Array ✅
-5. 26 - Remove Duplicates from Sorted Array
-6. 283 - Move Zeroes
-7. 169 - Majority Element
-8. 448 - Find All Numbers Disappeared in an Array
-9. 349 - Intersection of Two Arrays
-10. 350 - Intersection of Two Arrays II
-11. 706 - Design HashMap (Practical for Frameworks)
+217. Contains Duplicate ✅
+242. Valid Anagram ✅
+1. Two Sum (Very Common) ✅
+88. Merge Sorted Array ✅
+26. Remove Duplicates from Sorted Array
+283. Move Zeroes
+169. Majority Element
+448. Find All Numbers Disappeared in an Array
+349. Intersection of Two Arrays
+350. Intersection of Two Arrays II
+706. Design HashMap (Practical for Frameworks)
 
 📁 Arrays & Hashing: Medium
 ---------------------------
-12. 36 - Valid Sudoku (Excellent for Complex Validation)
-13. 347 - Top K Frequent Elements
-14. 238 - Product of Array Except Self
-15. 56 - Merge Intervals (Great for Test Coverage Analysis)
-16. 15 - 3Sum
+36. Valid Sudoku (Excellent for Complex Validation)
+347. Top K Frequent Elements
+238. Product of Array Except Self
+56. Merge Intervals (Great for Test Coverage Analysis)
+15. 3Sum
 
 🔁 Two Pointers, Sorting & Intervals: Easy
 ------------------------------------------
-32. 121 - Best Time to Buy and Sell Stock ✅
-33. 202 - Happy Number
-34. 141 - Linked List Cycle (Memory Leak Concepts)
+121. Best Time to Buy and Sell Stock ✅
+202. Happy Number
+141. Linked List Cycle (Memory Leak Concepts)
 
 🔁 Two Pointers, Sorting & Intervals: Medium
 --------------------------------------------
-35. 11 - Container With Most Water
-36. 253 - Meeting Rooms II (Good for Scheduling Tests)
-37. 215 - Kth Largest Element in an Array
+11. Container With Most Water
+253. Meeting Rooms II (Good for Scheduling Tests)
+215. Kth Largest Element in an Array
 
 🔤 Strings & Sliding Window: Easy
 --------------------------------
-17. 344 - Reverse String ✅
-18. 387 - First Unique Character in a String
-19. 125 - Valid Palindrome (Very Common) ✅
-20. 20 - Valid Parentheses (Very Common)
-21. 58 - Length of Last Word
-22. 409 - Longest Palindrome
-23. 929 - Unique Email Addresses (Great for Testing Scenarios)
-24. 290 - Word Pattern (Good for API Testing)
-25. 205 - Isomorphic Strings
-26. 383 - Ransom Note
+344. Reverse String ✅
+387. First Unique Character in a String
+125. Valid Palindrome (Very Common) ✅
+20. Valid Parentheses (Very Common)
+58. Length of Last Word
+409. Longest Palindrome
+929. Unique Email Addresses (Great for Testing Scenarios)
+290. Word Pattern (Good for API Testing)
+205. Isomorphic Strings
+383. Ransom Note
 
 🔤 Strings & Sliding Window: Medium
 -----------------------------------
-27. 3 - Longest Substring Without Repeating Characters ✅
-28. 49 - Group Anagrams ✅
-29. 151 - Reverse Words in a String
-30. 394 - Decode String (Good for Parsing Tests)
-31. 8 - String to Integer (atoi) (Excellent for Edge Case Testing!)
+3. Longest Substring Without Repeating Characters ✅
+49. Group Anagrams ✅
+151. Reverse Words in a String
+394. Decode String (Good for Parsing Tests)
+8. String to Integer (atoi) (Excellent for Edge Case Testing!)
 
 🗂 Stacks & Queues: Easy
 ------------------------
-38. 232 - Implement Queue using Stacks
-39. 225 - Implement Stack using Queues
-40. 155 - Min Stack
+232. Implement Queue using Stacks
+225. Implement Stack using Queues
+155. Min Stack
 
 🗂 Stacks & Queues: Medium
 --------------------------
-41. 739 - Daily Temperatures
+739. Daily Temperatures
 
 🔁 Recursion & Backtracking (Basic): Easy
 -----------------------------------------
-42. 104 - Maximum Depth of Binary Tree
-43. 110 - Balanced Binary Tree
-44. 206 - Reverse Linked List
-45. 21 - Merge Two Sorted Lists
+104. Maximum Depth of Binary Tree
+110. Balanced Binary Tree
+206. Reverse Linked List
+21. Merge Two Sorted Lists
 
 🔁 Recursion & Backtracking (Basic): Medium
 -------------------------------------------
-46. 78 - Subsets (Combinatorial Testing Concepts)
-47. 46 - Permutations
+78. Subsets (Combinatorial Testing Concepts)
+46. Permutations
 
 🔍 Binary Search & Matrix: Easy
 -------------------------------
-48. 278 - First Bad Version (Classic QA Problem!)
-49. 704 - Binary Search
-50. 74 - Search a 2D Matrix
+278. First Bad Version (Classic QA Problem!)
+704. Binary Search
+74. Search a 2D Matrix
 
 🔍 Binary Search & Matrix: Medium
 ---------------------------------
-51. 33 - Search in Rotated Sorted Array
-52. 54 - Spiral Matrix (2D Test Data)
-53. 973 - K Closest Points to Origin
+33. Search in Rotated Sorted Array
+54. Spiral Matrix (2D Test Data)
+973. K Closest Points to Origin
 
 🌳 Binary Tree & Graph (Optional Basics): Medium
 ------------------------------------------------
-54. 102 - Binary Tree Level Order Traversal (Hierarchical Data Testing)
-55. 572 - Subtree of Another Tree
-56. 617 - Merge Two Binary Trees
+102. Binary Tree Level Order Traversal (Hierarchical Data Testing)
+572. Subtree of Another Tree
+617. Merge Two Binary Trees
 
 ➕ Bit Manipulation & Math: Easy
 --------------------------------
-57. 190 - Reverse Bits
-58. 191 - Number of 1 Bits
-59. 9 - Palindrome Number
-60. 13 - Roman to Integer
+190. Reverse Bits
+191. Number of 1 Bits
+9. Palindrome Number
+13. Roman to Integer
 
 Longterm Roadmap for Leetcode
---------------------
+-----------------------------
 📁 Arrays & Hashing: Easy
 -------------------------
-1. Two Sum (#1) - array + hashmap ✅
-2. Contains Duplicate (#217) ✅
-3. Intersection of Two Arrays (#349)
-4. Majority Element (#169)
-5. Product of Array Except Self (#238)
-6. Top K Frequent Elements (#347)
-7. Find Missing Number / Missing Ranges (#268 / #163)
-8. Longest Consecutive Sequence (#128) ✅
+1. Find Missing Number / Missing Ranges (#268 / #163)
+2. Longest Consecutive Sequence (#128) ✅
 
 📁 Arrays & Hashing: Medium
 ---------------------------
-9. Subarray Sum Equals K (#560)
-10. 3Sum (#15) 
-11. Group Anagrams (#49) ✅
-12. Top K Frequent Words (#692)
-13. Longest Subarray with Equal 0s and 1s (#525)
-14. Maximum Size Subarray Sum Equals K (variation of #560)
+3. Subarray Sum Equals K (#560)
+4. Top K Frequent Words (#692)
+5. Longest Subarray with Equal 0s and 1s (#525)
+6. Maximum Size Subarray Sum Equals K (variation of #560)
 
 🔤 Strings & Sliding Window: Easy
 ---------------------------------
-15. Valid Anagram (#242) ✅
-16. First Unique Character in a String (#387)
-17. Reverse String (#344) ✅
-18. Valid Palindrome (#125) ✅
-19. Implement strStr() (#28)
-20. Count and Say (#38)
+7. Valid Anagram (#242) ✅
+8. Implement strStr() (#28)
+9. Count and Say (#38)
 
 🔤 Strings & Sliding Window: Medium
 -----------------------------------
-21. Longest Substring Without Repeating Characters (#3) ✅
-22. Minimum Window Substring (#76)
-23. Longest Repeating Character Replacement (#424)
-24. Valid Parentheses (#20)
-25. Longest Palindromic Substring (#5)
-26. Find All Anagrams in a String (#438)
+10. Minimum Window Substring (#76)
+11. Longest Repeating Character Replacement (#424)
+12. Longest Palindromic Substring (#5)
+13. Find All Anagrams in a String (#438)
 
 🔁 Two Pointers, Sorting & Intervals: Easy
 ------------------------------------------
-27. Move Zeroes (#283)
-28. 2Sum II - Input array sorted (#167)
-29. Merge Sorted Array (#88) ✅
-30. Valid Palindrome II (#680) ✅
-31. Container With Most Water (#11)
+14. 2Sum II - Input array sorted (#167)
+15. Valid Palindrome II (#680) ✅
 
 🔁 Two Pointers, Sorting & Intervals: Medium
 --------------------------------------------
-32. Sort Colors (Dutch Flag) (#75)
-33. 3Sum Closest (#16)
-34. Remove Duplicates from Sorted Array (#26)
-35. Intersection of Two Arrays II (#350)
-36. Merge Intervals (#56)
-
-🗂 Stacks & Queues: Easy
-------------------------
-37. Valid Parentheses (#20)
-38. Min Stack (#155)
-39. Implement Queue using Stacks (#232)
+16. Sort Colors (Dutch Flag) (#75)
+17. 3Sum Closest (#16)
 
 🗂 Stacks & Queues: Medium
 --------------------------
-40. Next Greater Element (#496)
-41. Sliding Window Maximum (#239)
-42. Evaluate Reverse Polish Notation (#150)
+18. Next Greater Element (#496)
+19. Sliding Window Maximum (#239)
+20. Evaluate Reverse Polish Notation (#150)
 
 🔁 Recursion & Backtracking (Basic): Easy
 -----------------------------------------
-43. Fibonacci Number (#509)
-44. Factorial recursion or Sum of Digits (not official LeetCode)
-45. Sum of digits (custom but base recursion problem)
+21. Fibonacci Number (#509)
+22. Factorial recursion or Sum of Digits (not official LeetCode)
+23. Sum of digits (custom but base recursion problem)
 
 🔁 Recursion & Backtracking (Basic): Medium
 -------------------------------------------
-46. Generate Parentheses (#22)
-47. Subsets (#78)
-48. Combinations (#77)
-49. Word Search (#79)
+24. Generate Parentheses (#22)
+25. Combinations (#77)
+26. Word Search (#79)
 
 🔍 Binary Search & Matrix: Easy
 -------------------------------
-50. Binary Search (#704)
-51. Search Insert Position (#35)
-52. Guess Number Higher or Lower (#374)
-53. Find First and Last Position of Element (#34)
+27. Search Insert Position (#35)
+28. Guess Number Higher or Lower (#374)
+29. Find First and Last Position of Element (#34)
 
 🔍 Binary Search & Matrix: Medium
 ---------------------------------
-54. Search a 2D Matrix (#74)
-55. Kth Smallest Element in a Sorted Matrix (#378)
-56. Divide Two Integers (#29)
+30. Kth Smallest Element in a Sorted Matrix (#378)
+31. Divide Two Integers (#29)
 
 🌳 Binary Tree & Graph (Optional mostly): Medium
 ------------------------------------------------
-57. Maximum Depth of Binary Tree (#104)
-58. Same Tree / Symmetric Tree (#100 / #101)
-59. Binary Tree Level Order Traversal (#102)
-60. Validate Binary Search Tree (#98)
+32. Same Tree / Symmetric Tree (#100 / #101)
+33. Validate Binary Search Tree (#98)
 
 🌳 Binary Tree & Graph (Optional extra senior topics): Medium
 -------------------------------------------------------------
-61. Lowest Common Ancestor (#236)
-62. Course Schedule (Graph) (#207)
+34. Lowest Common Ancestor (#236)
+35. Course Schedule (Graph) (#207)
 
 ➕ Bit Manipulation & Math: Easy
 --------------------------------
-63. Single Number (#136)
-64. Hamming Distance (#461)
-65. Power of Two (#231)
+36. Single Number (#136)
+37. Hamming Distance (#461)
+38. Power of Two (#231)
 
 ➕ Bit Manipulation & Math: Medium
 ----------------------------------
-67. Count Bits (#338)
-68. Number of 1 Bits (#191)
-69. Bits manipulation variants (e.g. #190 or #137)
-
-
+39. Count Bits (#338)
+40. Bits manipulation variants (e.g. #190 or #137)
 '''
 
 # Basic programming
