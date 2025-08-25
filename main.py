@@ -53,7 +53,8 @@ Basic programming
 #31a. Remove duplicate words and return a list ✅
 #32. Check for special characters using regex - Using re.search() ✅
 #32a. Check for special characters using regex - Using re.compile() ✅
-#33. Check for URLs in strings using regex
+#33. Check for URLs in strings using regex - Using http://urlregex.com ✅
+#33a. Check for URLs in strings using regex - Using custome regex r'https?://\S+' ✅
 #34. Find the second largest/smallest element in a descending order list - sort(reverse=True) ✅
 #35. Find the number of repeating substring ✅
 #36. Sum of all Even numbers ✅
@@ -820,7 +821,27 @@ if regex.search(string):
 else:
     print('String does not contain any special character')
 
-#33. Check for URLs in strings using regex
+#33. Check for URLs in strings using regex - Using http://urlregex.com
+import re
+stringOne = "Im a blogger at http://www.sunnytestingtools.com/"
+stringTwo = "My profile: https://sunnyonlinetrainings.com/about.html and MyBlog: http://www.sunnytestingtools.com"
+
+urlOne = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', stringOne)
+print(urlOne)
+
+urlTwo = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', stringTwo)
+print(urlTwo)
+
+#33a. Check for URLs in strings using regex - Using custome regex r'https?://\S+'
+import re
+stringOne = "Im a blogger at http://www.sunnytestingtools.com/"
+stringTwo = "My profile: https://sunnyonlinetrainings.com/about.html and MyBlog: http://www.sunnytestingtools.com"
+
+urlOne = re.findall(r'https?://\S+', stringOne)
+print(urlOne)
+
+urlTwo = re.findall(r'https?://\S+', stringTwo)
+print(urlTwo)
 
 #34. Find the second largest/smallest element in a descending order list - sort(reverse=True)
 list = [70, 11, 20, 4, 100]
