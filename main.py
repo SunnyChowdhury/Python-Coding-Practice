@@ -54,7 +54,7 @@ Basic programming
 #32. Check for special characters using regex - Using re.search() ✅
 #32a. Check for special characters using regex - Using re.compile() ✅
 #33. Check for URLs in strings using regex - Using http://urlregex.com ✅
-#33a. Check for URLs in strings using regex - Using custome regex r'https?://\S+' ✅
+#33a. Check for URLs in strings using regex - Using custom regex r'https?://\S+' ✅
 #34. Find the second largest/smallest element in a descending order list - sort(reverse=True) ✅
 #35. Find the number of repeating substring ✅
 #36. Sum of all Even numbers ✅
@@ -110,6 +110,10 @@ Leetcode: Sliding Window : Medium
 ----------------------------------
 3. Longest Substring Without Repeating Characters ✅
 
+Leetcode: Stack : Easy
+----------------------
+20. Valid Parentheses ✅
+
 Leetcode Roadmap
 ----------------
 📁 Arrays & Hashing: Easy
@@ -151,7 +155,7 @@ Leetcode Roadmap
 344. Reverse String ✅
 387. First Unique Character in a String
 125. Valid Palindrome (Very Common) ✅
-20. Valid Parentheses (Very Common)
+20. Valid Parentheses (Very Common) ✅
 58. Length of Last Word
 409. Longest Palindrome
 929. Unique Email Addresses (Great for Testing Scenarios)
@@ -1239,3 +1243,25 @@ def longestSubstingWithoutReapeatingCharacters(s):
     return res
 
 print(longestSubstingWithoutReapeatingCharacters(s))
+
+# Leetcode: Stack : Easy
+# ----------------------
+#20. Valid Parentheses - stack (has elements), not stack (no elements)
+s = "()"
+
+def validParenthese(s):
+    stack = []
+    stackDict = { ")" : "(", "]" : "[", "}" : "{" }
+
+    for c in s:
+        if c in stackDict:
+            if stack and stack[-1] == stackDict[c]:
+                stack.pop()
+            else:
+                return False
+        else:
+            stack.append(c)
+
+    return not stack
+
+print(validParenthese(s))
