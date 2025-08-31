@@ -84,12 +84,12 @@ Leetcode: Arrays & Hashing : Easy
 217. Contains Duplicate ✅
 242. Valid Anagram ✅
 1. Two Sum ✅
-14. Longest Common Prefix ✅
-27. Remove Element ✅
+14. Longest Common Prefix - Compare the first string elements with the rest in the strs ✅
+27. Remove Element - k is the number of element that is not equal to val, nums[k] = nums[i] ✅
 
 Leetcode: Arrays & Hashing : Medium
 ----------------------------------
-49. Group Anagrams ✅
+49. Group Anagrams - Use dict, ord(), array of 26 characters ✅
 128. Longest Consecutive Sequence ✅
 122. Best Time to Buy and Sell Stock II ✅
 
@@ -966,14 +966,14 @@ def twoSum(nums, target):
 
 print(twoSum(nums, target))
 
-#14. Longest Common Prefix
+#14. Longest Common Prefix - Compare the first string elements with the rest in the strs
 strs = ["flower","flow","flight"]
 
 def longestCommonPrefix(strs):
     res = ""
-    for i in range(len(strs[0])):
-        for s in strs:
-            if i == len(s) or s[i] != strs[0][i]:
+    for i in range(len(strs[0])):                   # i goes from 0 -> len(strs[0]) - 1
+        for s in strs:                              # s is each string in strs
+            if i == len(s) or s[i] != strs[0][i]:   # this particular string s is too short for index i, string is out of bound
                 return res
         res += strs[0][i]
     
@@ -981,7 +981,7 @@ def longestCommonPrefix(strs):
 
 print(longestCommonPrefix(strs))
 
-#27. Remove Element
+#27. Remove Element - k is the number of element that is not equal to val, nums[k] = nums[i]
 nums = [0,1,2,2,3,0,4,2]
 val = 2
 
@@ -1003,15 +1003,16 @@ from collections import defaultdict
 strs = ["eat","tea","tan","ate","nat","bat"]
 res = defaultdict(list)   # creates an empty list as a default value, no need to create a key
 
-def validGroupAnagram(strs):
+def groupAnagram(strs):
     for s in strs:
-        count = [0] * 26
+        count = [0] * 26                    #create a list of 26 zeros
         for c in s:
-            count[ord(c) - ord("a")] +=1  # Map 'a' - 'z' to idex 0 - 25
-        res[tuple(count)].append(s)
+            count[ord(c) - ord("a")] +=1    #map a to z to index 0 - 25, ord("c") - ord("a") = 99 - 97 = 2, 'c' maps to slot 2 in the count list
+        res[tuple(count)].append(s)         #change the dictionary key to a tuple
+
     return list(res.values())
 
-print(validGroupAnagram(strs))
+print(groupAnagram(strs))
 
 #128. Longest Consecutive Sequence - Use set(), check left number
 nums = [1,0,1,2]
