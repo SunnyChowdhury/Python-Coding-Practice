@@ -1022,6 +1022,7 @@ def longestConsecutiveSequence(nums):
     longest = 0
     length = 0
     for n in nums:
+        #check if its the start of a sequence
         if (n - 1) not in hashSet:
             length = 1
         while (n + length) in hashSet:
