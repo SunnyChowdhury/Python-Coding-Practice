@@ -90,7 +90,7 @@ Leetcode: Arrays & Hashing : Easy
 Leetcode: Arrays & Hashing : Medium
 ----------------------------------
 49. Group Anagrams - Use dict, ord(), array of 26 characters ✅
-128. Longest Consecutive Sequence ✅
+128. Longest Consecutive Sequence - Use set(), check left number ✅
 122. Best Time to Buy and Sell Stock II ✅
 
 Leetcode: Two Pointers : Easy
@@ -1021,13 +1021,13 @@ hashSet = set(nums)
 def longestConsecutiveSequence(nums):
     longest = 0
     length = 0
-    for n in nums:
+    for n in hashSet:
         #check if its the start of a sequence
         if (n - 1) not in hashSet:
             length = 1
-        while (n + length) in hashSet:
-            length += 1
-        longest = max(longest, length)
+            while (n + length) in hashSet:
+                length += 1
+            longest = max(longest, length)
     return longest
 
 print(longestConsecutiveSequence(nums))
@@ -1134,6 +1134,23 @@ def validPalindromeTwo(s):
         return validPalindromeHelper(s, left + 1, right) or validPalindromeHelper(s, left, right - 1)
         left += 1
         right -= 1
+    return True
+
+print(validPalindromeTwo(s))
+
+#680a. Valid Palindrome II
+s = "racecarx"
+
+def validPalindromeTwo(s):
+    left, right = 0, len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            skipL = s[left+1:right+1]
+            skipR = s[left:right]
+            return skipL == skipL[::-1] or skipR == skipR[::-1]
+        left += 1
+        right -= 1
+    
     return True
 
 print(validPalindromeTwo(s))
